@@ -89,6 +89,11 @@ export default function Home() {
           </Link>
         </div>
       </div>
+
+      {/* Social media */}
+
+
+
     </div>
   );
 }
