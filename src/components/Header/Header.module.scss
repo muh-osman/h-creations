@@ -1,14 +1,2 @@
 @use "../../sass" as *;
 
-header {
-  background-color: $primary-clr;
-
-  nav {
-    @include center();
-
-    ul {
-      @include center();
-      gap: 16px;
-    }
-  }
-}
