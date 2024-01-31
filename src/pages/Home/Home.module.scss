@@ -143,3 +143,85 @@
     }
   }
 }
+
+// Branding
+.branding_box {
+  @include center();
+
+  div:nth-child(1) {
+    width: 55%;
+  }
+
+  div:nth-child(2) {
+    width: 45%;
+  }
+
+  div {
+    @include center();
+    flex-direction: column;
+
+    h1 {
+      font-size: 120px;
+    }
+
+    h2 {
+      font-size: 64px;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    a {
+      @include center();
+      margin-top: 32px;
+      font-size: 32px;
+      color: #f1f1f1;
+      background-color: #b6ac9a;
+      border-radius: 64px;
+      padding: 10px 25px;
+      transition: 0.3s;
+
+      &:hover {
+        color: #007bff;
+        background-color: transparent;
+      }
+
+      svg {
+        transition: 0.3s;
+      }
+
+      &:hover svg {
+        transform: translateX(10px);
+        color: #007bff;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .branding_box {
+    flex-direction: column;
+
+    div:nth-child(1) {
+      width: 100%;
+    }
+
+    div:nth-child(2) {
+      width: 100%;
+    }
+
+    h3 {
+      font-size: 16px;
+    }
+
+    h1 {
+      font-size: 85px !important;
+      margin-top: 32px;
+    }
+
+    h2 {
+      font-size: 44px !important;
+    }
+  }
+}
