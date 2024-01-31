@@ -9,8 +9,9 @@ import iconTwo from "../../assets/images/home/icon-2.avif";
 import iconThree from "../../assets/images/home/icon-3.avif";
 import iconFour from "../../assets/images/home/icon-4.avif";
 import branding from "../../assets/images/home/branding.png";
+import social from "../../assets/images/home/social.png";
 // Icons
-import { FaChevronRight } from "react-icons/fa6";
+import { FaChevronRight, FaChevronLeft } from "react-icons/fa6";
 
 export default function Home() {
   return (
@@ -91,9 +92,23 @@ export default function Home() {
       </div>
 
       {/* Social media */}
+      <div className={style.social_box}>
+        <div className={style.social}>
+          <div>
+            <h1 style={{ textAlign: "left" }}>SOCIAL</h1>
+            <h1 style={{ textAlign: "right" }}>MEDIA</h1>
+            <h2>السوشيال ميديا</h2>
+          </div>
+          <div>
+            <img src={social} alt="social media" />
+          </div>
+        </div>
 
-
-
+        <div>
+          <Link to="socialmedia">نماذج أعمال <FaChevronLeft /></Link>
+          <h3>السوشيال ميديا بوابتك للوصول لعملائك</h3>
+        </div>
+      </div>
     </div>
   );
 }
