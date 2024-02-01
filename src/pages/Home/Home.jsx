@@ -10,6 +10,14 @@ import iconThree from "../../assets/images/home/icon-3.avif";
 import iconFour from "../../assets/images/home/icon-4.avif";
 import branding from "../../assets/images/home/branding.png";
 import social from "../../assets/images/home/social.png";
+import designOne from "../../assets/images/home/design-1.png";
+import designTwo from "../../assets/images/home/design-2.png";
+import designThree from "../../assets/images/home/design-3.png";
+import adsOne from "../../assets/images/home/ads-1.avif";
+import adsTwo from "../../assets/images/home/ads-2.jpeg";
+import programing from "../../assets/images/home/programing.avif";
+import contact from "../../assets/images/home/contact-us.avif";
+
 // Icons
 import { FaChevronRight, FaChevronLeft } from "react-icons/fa6";
 
@@ -105,8 +113,74 @@ export default function Home() {
         </div>
 
         <div>
-          <Link to="socialmedia">نماذج أعمال <FaChevronLeft /></Link>
+          <Link to="socialmedia">
+            نماذج أعمال <FaChevronLeft />
+          </Link>
           <h3>السوشيال ميديا بوابتك للوصول لعملائك</h3>
+        </div>
+      </div>
+
+      {/* Designs */}
+      <div className={style.design_row_one_box}>
+        <div>
+          <img src={designOne} alt="Designs" />
+        </div>
+        <div>
+          <img src={designTwo} alt="Designs" />
+        </div>
+      </div>
+
+      <div className={style.design_row_two_box}>
+        <div>
+          <img src={designThree} alt="Designs" />
+        </div>
+        <div>
+          <h1>Designs</h1>
+          <Link to="branding">
+            <FaChevronRight /> نماذج أعمال
+          </Link>
+        </div>
+      </div>
+
+      {/* Ads */}
+      <div className={style.ads}>
+        <div>
+          <h1>الحملات الإعلانية</h1>
+
+          <h3>أحصل على أرباح مضاعفة مع الإعلانات الممولة</h3>
+          <Link to="marketing">
+            نماذج أعمال <FaChevronLeft />
+          </Link>
+        </div>
+        <div>
+          <img src={adsOne} alt="ads" />
+        </div>
+      </div>
+      <div>
+        <img src={adsTwo} alt="ads" style={{ width: "100%" }} />
+      </div>
+
+      {/* Programing */}
+      <div className={style.programing}>
+        <h1>برمجة المواقع الإلكترونية</h1>
+        <h3>موقعك الالكتروني هو واجهتك على الإنترنت</h3>
+        <Link to="programing">
+          <FaChevronRight /> نماذج أعمال
+        </Link>
+        <div>
+          <img src={programing} alt="programing" />
+        </div>
+      </div>
+
+      {/* Contact */}
+      <div className={style.contact}>
+        <div>
+          <h1>فريق عمل متكامل لنجاح مشروعك</h1>
+          <Link to="contact">تواصل معنا الآن</Link>
+        </div>
+
+        <div>
+          <img src={contact} alt="contact" />
         </div>
       </div>
     </div>

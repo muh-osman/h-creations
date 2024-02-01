@@ -1,5 +1,82 @@
 @use "../../sass" as *;
 
 footer {
-  background-color: $primary-clr;
+  background-color: #888888;
+  color: #f1f1f1;
+  // padding-bottom: 16px;
+  padding: 32px 64px;
+  padding-bottom: 12px;
+
+  .footer_box {
+    @include center();
+    justify-content: space-between;
+
+    h1 {
+      font-size: 55px;
+      font-weight: bold;
+      line-height: 50px;
+      margin: 0;
+    }
+
+    a {
+      color: inherit;
+      transition: 0.2s;
+
+      &:hover {
+        color: #b6ac9a;
+        text-decoration: underline;
+      }
+    }
+
+    .social_media_icon_box {
+      @include center();
+      flex-direction: column;
+      justify-content: space-between;
+
+      .social_media_icon {
+        @include center();
+        gap: 16px;
+        font-size: 22px;
+
+        a {
+          color: inherit;
+          transition: 0.2s;
+
+          &:hover {
+            color: #b6ac9a;
+          }
+        }
+      }
+    }
+  }
+
+  p {
+    text-align: center;
+    font-size: 15px;
+    margin: 0;
+  }
+}
+
+@media (max-width: 800px) {
+  footer {
+    padding: 32px 16px;
+    padding-bottom: 12px;
+  }
+  .footer_box {
+    flex-direction: column;
+  }
+
+  .title {
+    order: 1;
+  }
+
+  .social_media_icon_box {
+    order: 3;
+    margin-bottom: 16px;
+  }
+
+  .email {
+    order: 2;
+    margin-bottom: 16px;
+  }
 }
