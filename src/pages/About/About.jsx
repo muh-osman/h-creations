@@ -1,7 +1,7 @@
 // Sass
 import style from "./About.module.scss";
 // Images
-import about from "../../assets/images/who-we-are/who-we-are.avif";
+import about from "../../assets/images/who-we-are/who-we-are.svg";
 
 export default function About() {
   return (
