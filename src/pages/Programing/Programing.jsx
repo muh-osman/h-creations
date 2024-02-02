@@ -65,7 +65,7 @@ export default function Programing() {
       </section>
 
       <section className={style.D}>
-        <h1>تصميم شعارات</h1>
+        <h1>برمجة وتصميم تطبيقات</h1>
         <div className={style.img_box_D}>
           <div>
             <img src={logoA} alt="programing" />
