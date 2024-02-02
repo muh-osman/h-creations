@@ -1,5 +1,7 @@
 // Sass
 import style from "./Programing.module.scss";
+// React
+import { useEffect } from "react";
 // Images
 import webOne from "../../assets/images/website/web-1.avif";
 import webTwo from "../../assets/images/website/web-2.avif";
@@ -17,6 +19,16 @@ import logoG from "../../assets/images/website/logo-7.png";
 import logoH from "../../assets/images/website/logo-8.png";
 
 export default function Programing() {
+
+
+  useEffect(() => {
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: "auto",
+    });
+  }, []);
+
   return (
     <article className={style.container}>
       <section className={style.A}>

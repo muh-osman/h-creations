@@ -7,12 +7,12 @@
 }
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: auto !important;
 }
 
 body {
   font-family: "Cairo", sans-serif !important;
-  background-color: #e7e7e7;
+  /* background-color: #e7e7e7; */
 }
 
 ul {

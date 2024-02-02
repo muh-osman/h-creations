@@ -20,8 +20,20 @@ import contact from "../../assets/images/home/contact-us.avif";
 
 // Icons
 import { FaChevronRight, FaChevronLeft } from "react-icons/fa6";
+// Reacr
+import { useEffect } from "react";
 
 export default function Home() {
+
+
+  useEffect(() => {
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: "auto",
+    });
+  }, []);
+
   return (
     <div className={style.container}>
       {/* Text hero */}

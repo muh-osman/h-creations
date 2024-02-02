@@ -2,8 +2,18 @@
 import style from "./About.module.scss";
 // Images
 import about from "../../assets/images/who-we-are/who-we-are.svg";
+// React
+import { useEffect } from "react";
 
 export default function About() {
+  useEffect(() => {
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: "auto",
+    });
+  }, []);
+
   return (
     <div className={style.container}>
       <div className={style.hero_box}>

@@ -4,9 +4,22 @@ import style from "./Contact.module.scss";
 import contact from "../../assets/images/contact/contact.svg";
 //
 import useWindowDimensions from "../../utiles/useWindowDimensions";
+// React
+import { useEffect } from "react";
 
 export default function Contact() {
+  
+  useEffect(() => {
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: "auto",
+    });
+  }, []);
+
   const { width } = useWindowDimensions();
+
+
   return (
     <div className={style.container}>
       {/* <h1>نحن هنا لمساعدتك</h1> */}

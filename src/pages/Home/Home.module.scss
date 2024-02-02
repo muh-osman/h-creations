@@ -3,12 +3,13 @@
 .container {
   padding: 32px;
   padding-top: 132px;
-  // background-color: #f1f1f1;
+  // background-color: #fbfbfb;
   // background-color: #e7e7e7;
-  // background-image: linear-gradient(#f1f1f1, #e7e7e7);
+  // background-image: linear-gradient(#fbfbfb, #e7e7e7);
+  background-image: linear-gradient(#fbfbfb 0%, #e7e7e7 80%);
 }
 
-@media (max-width: 575px) {
+@media (max-width: 575px) { 
   .container {
     padding: 16px;
     padding-top: 132px;
