@@ -86,3 +86,20 @@ nav {
     border-bottom: 1px solid #000;
   }
 }
+
+
+/* form */
+.btn-primary {
+  background-color: #b6ac9a !important;
+  border-color: #b6ac9a;
+}
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #837966 !important;
+  border-color: #b6ac9a !important;
+}
+
+.form-control:focus {
+  border-color: #b6ac9a !important;
+  box-shadow: 0 0 0 0.25rem #b6ac9a6c !important;
+}
