@@ -3,14 +3,14 @@ import { useEffect } from 'react';
 // Sass
 import style from './Brandin.module.scss'
 // 
-import logoA from "../../assets/images/website/logo-1.png";
-import logoB from "../../assets/images/website/logo-2.png";
-import logoC from "../../assets/images/website/logo-3.png";
-import logoD from "../../assets/images/website/logo-4.png";
-import logoE from "../../assets/images/website/logo-5.png";
-import logoF from "../../assets/images/website/logo-6.png";
-import logoG from "../../assets/images/website/logo-7.png";
-import logoH from "../../assets/images/website/logo-8.png";
+import logoA from "../../assets/images/branding/logo-1.png";
+import logoB from "../../assets/images/branding/logo-2.png";
+import logoC from "../../assets/images/branding/logo-3.png";
+import logoD from "../../assets/images/branding/logo-4.png";
+import logoE from "../../assets/images/branding/logo-5.png";
+import logoF from "../../assets/images/branding/logo-6.png";
+import logoG from "../../assets/images/branding/logo-7.png";
+import logoH from "../../assets/images/branding/logo-8.png";
 
 
 export default function Branding() {
