@@ -21,11 +21,12 @@ import webFive from "../../assets/images/website/web-5.avif";
 // import logoH from "../../assets/images/website/logo-8.png";
 
 import storeOne from "../../assets/images/website/store-1.jpg";
-
+import storeTwo from "../../assets/images/website/store-2.jpg";
+import storeThree from "../../assets/images/website/store-3.png";
+import storeFour from "../../assets/images/website/store-4.png";
+import storeFive from "../../assets/images/website/store-5.png";
 
 export default function Programing() {
-
-
   useEffect(() => {
     window.scroll({
       top: 0,
@@ -99,20 +100,72 @@ export default function Programing() {
         </div>
       </section> */}
 
-
       <section className={style.E}>
         <h1>إنشاء متاجر الكترونية</h1>
 
         <div className={style.E_inner_box}>
-            <div><a href="https://mix-mart.myfathershops.com"><FaChevronRight / > mix-mart.com</a></div>
-            <div><img src={storeOne} alt="E-store" /></div>
+          <div className={style.E_inner_box_one}>
+            <a href="https://mix-mart.myfathershops.com">
+              <FaChevronRight /> mix-mart.com
+            </a>
+          </div>
+          <div className={style.E_inner_box_two}>
+            <img src={storeOne} alt="E-store" />
+          </div>
         </div>
-
-
-
       </section>
 
+      <section className={style.F}>
+        <div className={style.F_inner_box}>
+          <div className={style.F_inner_box_one}>
+            <a href="https://smart-select.myfathershops.com/">
+              smart-select.com <FaChevronLeft />
+            </a>
+          </div>
+          <div className={style.F_inner_box_two}>
+            <img src={storeTwo} alt="E-store" />
+          </div>
+        </div>
+      </section>
 
+      <section className={style.E}>
+        <div className={style.E_inner_box}>
+          <div className={style.E_inner_box_one}>
+            <a href="https://shop-it.myfathershops.com/">
+              <FaChevronRight /> shop-it.com
+            </a>
+          </div>
+          <div className={style.E_inner_box_two}>
+            <img src={storeThree} alt="E-store" />
+          </div>
+        </div>
+      </section>
+
+      <section className={style.F}>
+        <div className={style.F_inner_box}>
+          <div className={style.F_inner_box_one}>
+            <a href="https://trendhouse1.myfathershops.com/">
+              trendhouse1.com <FaChevronLeft />
+            </a>
+          </div>
+          <div className={style.F_inner_box_two}>
+            <img src={storeFour} alt="E-store" />
+          </div>
+        </div>
+      </section>
+
+      <section className={style.E}>
+        <div className={style.E_inner_box}>
+          <div className={style.E_inner_box_one}>
+            <a href="https://superbuy.myfathershops.com/">
+              <FaChevronRight /> superbuy.com
+            </a>
+          </div>
+          <div className={style.E_inner_box_two}>
+            <img src={storeFive} alt="E-store" />
+          </div>
+        </div>
+      </section>
     </article>
   );
 }
