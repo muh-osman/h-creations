@@ -6,53 +6,81 @@ import webTwo from "../../assets/images/website/web-2.avif";
 import webThree from "../../assets/images/website/web-3.avif";
 import webFour from "../../assets/images/website/web-4.avif";
 import webFive from "../../assets/images/website/web-5.avif";
-import webSix from "../../assets/images/website/web-6.png";
+
+import logoA from "../../assets/images/website/logo-1.png";
+import logoB from "../../assets/images/website/logo-2.png";
+import logoC from "../../assets/images/website/logo-3.png";
+import logoD from "../../assets/images/website/logo-4.png";
+import logoE from "../../assets/images/website/logo-5.png";
+import logoF from "../../assets/images/website/logo-6.png";
+import logoG from "../../assets/images/website/logo-7.png";
+import logoH from "../../assets/images/website/logo-8.png";
 
 export default function Programing() {
   return (
     <article className={style.container}>
-
       <section className={style.A}>
         <h1>نماذج لمواقع إلكترونية</h1>
-        <div  className={style.img_box_A}>
-          <div><img src={webTwo} alt="programing" /></div>
-          <div><img src={webOne} alt="programing" /></div>
+        <div className={style.img_box_A}>
+          <div>
+            <img src={webTwo} alt="programing" />
+          </div>
+          <div>
+            <img src={webOne} alt="programing" />
+          </div>
         </div>
       </section>
 
       <section className={style.B}>
         <h1>برمجة وتصميم منصات تعليمية</h1>
-        <div  className={style.img_box_B}>
-          <div><img src={webFour} alt="programing" /></div>
-          <div><img src={webThree} alt="programing" /></div>
+        <div className={style.img_box_B}>
+          <div>
+            <img src={webFour} alt="programing" />
+          </div>
+          <div>
+            <img src={webThree} alt="programing" />
+          </div>
         </div>
       </section>
 
       <section className={style.C}>
         <h1>برمجة وتصميم مواقع تعريفية</h1>
-        <div  className={style.img_box_C}>
-          <div><img src={webFive} alt="programing" /></div>
+        <div className={style.img_box_C}>
+          <div>
+            <img src={webFive} alt="programing" />
+          </div>
         </div>
       </section>
 
       <section className={style.D}>
         <h1>تصميم شعارات</h1>
-        <div  className={style.img_box_D}>
-          <div><img src={webFive} alt="programing" /></div>
-          <div><img src={webFive} alt="programing" /></div>
-          <div><img src={webFive} alt="programing" /></div>
-          <div><img src={webFive} alt="programing" /></div>
-          <div><img src={webFive} alt="programing" /></div>
-          <div><img src={webFive} alt="programing" /></div>
-          <div><img src={webFive} alt="programing" /></div>
-          <div><img src={webFive} alt="programing" /></div>
+        <div className={style.img_box_D}>
+          <div>
+            <img src={logoA} alt="programing" />
+          </div>
+          <div>
+            <img src={logoB} alt="programing" />
+          </div>
+          <div>
+            <img src={logoC} alt="programing" />
+          </div>
+          <div>
+            <img src={logoD} alt="programing" />
+          </div>
+          <div>
+            <img src={logoE} alt="programing" />
+          </div>
+          <div>
+            <img src={logoF} alt="programing" />
+          </div>
+          <div>
+            <img src={logoG} alt="programing" />
+          </div>
+          <div>
+            <img src={logoH} alt="programing" />
+          </div>
         </div>
       </section>
-
-
-
-
-
     </article>
   );
 }

@@ -1,5 +1,128 @@
 @use "../../sass" as *;
 
 .container {
-  padding-top: 100px;
+  padding: 32px;
+  padding-top: 164px;
+}
+
+@media (max-width: 575px) {
+  .container {
+    padding: 16px;
+    padding-top: 132px;
+  }
+}
+
+.hero_box {
+  @include center();
+  margin-bottom: 64px;
+
+  div {
+    width: 50%;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 32px;
+    line-height: 40px;
+  }
+
+  ul {
+    list-style: disc;
+    padding-right: 32px;
+
+    li {
+      margin-bottom: 16px;
+      font-size: 22px;
+      color: #707171;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .hero_box {
+    flex-direction: column-reverse;
+
+    div {
+      width: 100%;
+    }
+
+    h1 {
+      font-size: 22px;
+      margin-bottom: 32px;
+      line-height: 40px;
+    }
+
+    ul {
+      list-style: disc;
+      padding-right: 32px;
+      padding-left: 0;
+
+      li {
+        margin-bottom: 16px;
+        font-size: 16px;
+        color: #707171;
+      }
+    }
+  }
+}
+
+// long_text
+.long_text {
+  width: 80%;
+  margin: auto;
+
+  p {
+    font-size: 18px;
+    color: #707171;
+  }
+}
+@media (max-width: 575px) {
+  .long_text {
+    width: 100%;
+
+    p {
+      font-size: 16px;
+    }
+  }
+}
+
+// Text hero
+.hero_text_box {
+  @include center();
+  flex-direction: column;
+
+  span {
+    padding-left: 70px;
+    color: #b6ac9a;
+    font-size: 140px;
+    font-weight: bold;
+  }
+
+  h1 {
+    color: #707171;
+    font-size: 140px;
+    font-weight: bold;
+    line-height: 125px;
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero_text_box {
+    span {
+      padding-left: 38px;
+      font-size: 70px;
+    }
+
+    h1 {
+      font-size: 70px;
+      line-height: 60px;
+    }
+  }
 }
