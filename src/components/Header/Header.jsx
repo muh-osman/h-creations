@@ -3,7 +3,7 @@ import { useRef } from "react";
 // Sass
 import style from "./Header.module.scss";
 // React router
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 // Icons
 import {
   FaHouse,
@@ -28,9 +28,9 @@ export default function Header() {
   return (
     <nav className="navbar bg-light navbar-expand-lg bg-body-tertiary fixed-top">
       <div className="container nav-box flex-row-reverse">
-        <a className="navbar-brand p-0" href="#">
+        <Link className="navbar-brand p-0" to="/">
           <img className="logo" src={logo} alt="logo" />
-        </a>
+        </Link>
 
         <button
           className="navbar-toggler"

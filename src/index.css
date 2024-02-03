@@ -109,6 +109,11 @@ nav {
   .nav-item.d-none {
     display: block !important;
   }
+
+  .navbar-nav {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
 }
 
 /* form */
