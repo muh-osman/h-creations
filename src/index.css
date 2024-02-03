@@ -86,8 +86,8 @@ nav {
 .nav-link {
   display: flex;
   align-items: center;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 8px;
+  padding-right: 8px;
   border: none;
 }
 
@@ -98,6 +98,16 @@ nav {
 
   .active {
     border-bottom: 1px solid #000;
+  }
+}
+
+@media (max-width: 991px) {
+  .nav-item.dropdown {
+    display: none !important;
+  }
+
+  .nav-item.d-none {
+    display: block !important;
   }
 }
 

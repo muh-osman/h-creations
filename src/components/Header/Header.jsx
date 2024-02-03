@@ -8,8 +8,8 @@ import { NavLink } from "react-router-dom";
 import {
   FaHouse,
   FaBriefcase,
-  FaPhone,
-  FaCircleInfo,
+  FaHeadphones,
+  FaInfo,
   FaBullhorn,
   FaHashtag,
   FaCode,
@@ -92,7 +92,6 @@ export default function Header() {
                       to="marketing"
                       onClick={closeSideBar}
                     >
-                      <FaBullhorn className="uniform-icon" />
                       التسويق
                     </NavLink>
                   </li>
@@ -103,7 +102,6 @@ export default function Header() {
                       to="branding"
                       onClick={closeSideBar}
                     >
-                      <FaFontAwesome className="uniform-icon" />
                       الهويات البصرية
                     </NavLink>
                   </li>
@@ -114,7 +112,6 @@ export default function Header() {
                       to="socialmedia"
                       onClick={closeSideBar}
                     >
-                      <FaHashtag className="uniform-icon" />
                       إدارة السوشيال ميديا
                     </NavLink>
                   </li>
@@ -125,11 +122,54 @@ export default function Header() {
                       to="programing"
                       onClick={closeSideBar}
                     >
-                      <FaCode className="uniform-icon" />
                       برمجة المواقع الإلكترونية
                     </NavLink>
                   </li>
                 </ul>
+              </li>
+
+              <li className="nav-item d-none">
+                <NavLink
+                  className="nav-link anchor"
+                  to="marketing"
+                  onClick={closeSideBar}
+                >
+                  <FaBullhorn className="uniform-icon" />
+                  التسويق
+                </NavLink>
+              </li>
+
+              <li className="nav-item d-none">
+                <NavLink
+                  className="nav-link anchor"
+                  to="branding"
+                  onClick={closeSideBar}
+                >
+                  <FaFontAwesome className="uniform-icon" />
+                  الهويات البصرية
+                </NavLink>
+              </li>
+
+              <li className="nav-item d-none">
+                <NavLink
+                  className="nav-link anchor"
+                  to="socialmedia"
+                  onClick={closeSideBar}
+                >
+                  <FaHashtag className="uniform-icon" />
+                  إدارة السوشيال ميديا
+                </NavLink>
+              </li>
+
+              <li className="nav-item d-none">
+                <NavLink
+                  className="nav-link anchor"
+                  to="programing"
+                  onClick={closeSideBar}
+                >
+                  <FaCode className="uniform-icon" />
+                  برمجة المواقع الإلكترونية
+                </NavLink>
               </li>
 
               <li className="nav-item">
@@ -138,7 +178,7 @@ export default function Header() {
                   to="about"
                   onClick={closeSideBar}
                 >
-                  <FaCircleInfo className="uniform-icon" /> من نحن
+                  <FaInfo className="uniform-icon" /> من نحن
                 </NavLink>
               </li>
 
@@ -148,7 +188,7 @@ export default function Header() {
                   to="contact"
                   onClick={closeSideBar}
                 >
-                  <FaPhone className="uniform-icon" /> تواصل معنا
+                  <FaHeadphones className="uniform-icon" /> تواصل معنا
                 </NavLink>
               </li>
             </ul>

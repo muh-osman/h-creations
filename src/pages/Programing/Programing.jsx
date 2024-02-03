@@ -11,14 +11,14 @@ import webThree from "../../assets/images/website/web-3.avif";
 import webFour from "../../assets/images/website/web-4.avif";
 import webFive from "../../assets/images/website/web-5.avif";
 
-import logoA from "../../assets/images/website/app-1.jpeg";
-import logoB from "../../assets/images/website/app-2.jpeg";
-import logoC from "../../assets/images/website/app-3.jpeg";
-import logoD from "../../assets/images/website/app-4.jpeg";
-import logoE from "../../assets/images/website/app-5.jpeg";
-import logoF from "../../assets/images/website/app-6.jpeg";
-import logoG from "../../assets/images/website/app-7.jpeg";
-import logoH from "../../assets/images/website/app-8.jpeg";
+import logoA from "../../assets/images/website/app-1.avif";
+import logoB from "../../assets/images/website/app-2.avif";
+import logoC from "../../assets/images/website/app-3.avif";
+import logoD from "../../assets/images/website/app-4.avif";
+import logoE from "../../assets/images/website/app-5.avif";
+import logoF from "../../assets/images/website/app-6.jpg";
+import logoG from "../../assets/images/website/app-7.jpg";
+import logoH from "../../assets/images/website/app-8.jpg";
 
 import storeOne from "../../assets/images/website/store-1.jpg";
 import storeTwo from "../../assets/images/website/store-2.jpg";
@@ -66,9 +66,11 @@ export default function Programing() {
         <div className={style.img_box_B}>
           <div>
             <img src={webFour} alt="programing" />
+            <a href="#">under construction</a>
           </div>
           <div>
             <img src={webThree} alt="programing" />
+            <a href="https://halthaqafy.com/">halthaqafy.com</a>
           </div>
         </div>
       </section>
@@ -144,7 +146,7 @@ export default function Programing() {
         <h1>برمجة وتصميم تطبيقات الجوال</h1>
         <div className={style.img_box_D}>
           <div>
-            <img src={logoA} alt="programing" />
+            <img src={logoD} alt="programing" />
           </div>
           <div>
             <img src={logoB} alt="programing" />
@@ -153,7 +155,7 @@ export default function Programing() {
             <img src={logoC} alt="programing" />
           </div>
           <div>
-            <img src={logoD} alt="programing" />
+            <img src={logoA} alt="programing" />
           </div>
           <div>
             <img src={logoE} alt="programing" />
