@@ -62,7 +62,7 @@ export default function Header() {
             />
           </div>
           <div className="offcanvas-body">
-            <ul className="navbar-nav flex-grow-1 px-0 mb-2 mb-lg-0 gap-4">
+            <ul className="navbar-nav flex-grow-1 px-0 mb-2 mb-lg-0 gap-3">
               <li className="nav-item">
                 <NavLink
                   className="nav-link anchor"
@@ -70,11 +70,11 @@ export default function Header() {
                   onClick={closeSideBar}
                 >
                   <FaHouse className="uniform-icon" />
-                  الصفحة الرئيسية
+                  الرئيسية
                 </NavLink>
               </li>
 
-              <li className="nav-item dropdown">
+              {/* <li className="nav-item dropdown">
                 <a
                   className="nav-link dropdown-toggle"
                   href="#"
@@ -126,9 +126,9 @@ export default function Header() {
                     </NavLink>
                   </li>
                 </ul>
-              </li>
+              </li> */}
 
-              <li className="nav-item d-none">
+              <li className="nav-item">
                 <NavLink
                   className="nav-link anchor"
                   to="marketing"
@@ -139,7 +139,7 @@ export default function Header() {
                 </NavLink>
               </li>
 
-              <li className="nav-item d-none">
+              <li className="nav-item">
                 <NavLink
                   className="nav-link anchor"
                   to="branding"
@@ -150,7 +150,7 @@ export default function Header() {
                 </NavLink>
               </li>
 
-              <li className="nav-item d-none">
+              <li className="nav-item">
                 <NavLink
                   className="nav-link anchor"
                   to="socialmedia"
@@ -161,14 +161,14 @@ export default function Header() {
                 </NavLink>
               </li>
 
-              <li className="nav-item d-none">
+              <li className="nav-item">
                 <NavLink
                   className="nav-link anchor"
                   to="programing"
                   onClick={closeSideBar}
                 >
                   <FaCode className="uniform-icon" />
-                  برمجة المواقع الإلكترونية
+                  برمجة المواقع
                 </NavLink>
               </li>
 

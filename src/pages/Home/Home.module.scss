@@ -149,6 +149,7 @@
 
 // Branding
 .branding_box {
+  margin-top: 64px;
   @include center();
 
   div:nth-child(1) {
@@ -220,18 +221,24 @@
 
     h1 {
       font-size: 85px !important;
-      margin-top: 32px;
+      margin-top: 16px;
     }
 
     h2 {
       font-size: 44px !important;
+    }
+
+    a {
+      margin-top: 16px !important;
+      font-size: 18px !important;
+      padding: 6px 13px !important;
     }
   }
 }
 
 // Social media
 .social_box {
-  margin-top: 80px;
+  margin-top: 100px;
 
   img {
     width: 100%;
@@ -295,6 +302,14 @@
   .social div {
     width: 100% !important;
   }
+
+  .social_box {
+    a {
+      margin-top: 16px !important;
+      font-size: 18px !important;
+      padding: 6px 13px !important;
+    }
+  }
 }
 
 @media (max-width: 575px) {
@@ -329,7 +344,7 @@
 // Designs
 // Row One
 .design_row_one_box {
-  margin-top: 64px;
+  margin-top: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -414,9 +429,19 @@
   }
 }
 
+@media (max-width: 991px) {
+  .design_row_two_box {
+    a {
+      margin-top: 16px !important;
+      font-size: 18px !important;
+      padding: 6px 13px !important;
+    }
+  }
+}
+
 // Ads
 .ads {
-  margin-top: 64px;
+  margin-top: 100px;
   @include center();
 
   div {
@@ -482,17 +507,23 @@
       font-size: 47px;
       margin-bottom: 16px;
     }
-  }
 
-  h3 {
-    margin-top: 0 !important;
-    font-size: 18px !important;
+    h3 {
+      margin-top: 0 !important;
+      font-size: 18px !important;
+    }
+
+    a {
+      margin-top: 16px !important;
+      font-size: 18px !important;
+      padding: 6px 13px !important;
+    }
   }
 }
 
 // Programing
 .programing {
-  margin-top: 64px;
+  margin-top: 100px;
   text-align: center;
 
   h1 {
@@ -543,11 +574,19 @@
     img {
       width: 100%;
     }
+
+    a {
+      margin-top: 16px !important;
+      font-size: 18px !important;
+      padding: 6px 13px !important;
+    }
   }
 }
 
 // Contact
 .contact {
+  margin-top: 64px;
+  margin-bottom: 64px;
   @include center();
   text-align: center;
 
@@ -593,6 +632,12 @@
 
     img {
       width: 100%;
+    }
+
+    a {
+      margin-top: 16px !important;
+      font-size: 18px !important;
+      padding: 6px 13px !important;
     }
   }
 }
