@@ -37,12 +37,12 @@ export default function Programing() {
 
   return (
     <article className={style.container}>
-
       <section className={style.C}>
         <h1>برمجة وتصميم مواقع تعريفية</h1>
         <div className={style.img_box_C}>
           <div>
             <img src={webFive} alt="programing" />
+            <a href="https://salthaqafy.com/">salthaqafy.com</a>
           </div>
         </div>
       </section>
@@ -52,9 +52,11 @@ export default function Programing() {
         <div className={style.img_box_A}>
           <div>
             <img src={webTwo} alt="programing" />
+            <a href="https://pro-educa.com/">pro-educa.com</a>
           </div>
           <div>
             <img src={webOne} alt="programing" />
+            <a href="https://chart-idea.com/">chart-idea.com</a>
           </div>
         </div>
       </section>
@@ -167,7 +169,6 @@ export default function Programing() {
           </div>
         </div>
       </section>
-      
     </article>
   );
 }
