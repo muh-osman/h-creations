@@ -6,15 +6,19 @@ import {
   FaFacebook,
   FaInstagram,
   FaEnvelope,
+  FaWhatsapp,
 } from "react-icons/fa6";
 
 export default function Footer() {
   return (
     <footer>
       <div className={style.footer_box}>
-        <div className={style.email}>
+        <div className={style.email} dir="ltr">
           <a href="mailto:info@h-creations.net">
-            info@h-creations.net <FaEnvelope />
+            <FaEnvelope /> info@h-creations.net
+          </a>
+          <a href="https://wa.me/00966987654321">
+            <FaWhatsapp /> +966-987654321
           </a>
         </div>
 

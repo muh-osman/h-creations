@@ -9,7 +9,7 @@
   background-image: linear-gradient(#fbfbfb 0%, #e7e7e7 80%);
 }
 
-@media (max-width: 575px) { 
+@media (max-width: 575px) {
   .container {
     padding: 16px;
     padding-top: 132px;
@@ -570,6 +570,19 @@
     &:hover {
       color: #007bff;
       background-color: transparent;
+    }
+  }
+
+  img {
+    animation: svg-motion 1.4s ease-in-out infinite alternate;
+  }
+
+  @keyframes svg-motion {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-12px);
     }
   }
 }

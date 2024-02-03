@@ -25,6 +25,16 @@
   img {
     background-color: transparent;
     width: 100%;
+    animation: svg-motion 1.4s ease-in-out infinite alternate;
+  }
+}
+
+@keyframes svg-motion {
+  from {
+      transform: translateY(0);
+  }
+  to {
+      transform: translateY(-12px);
   }
 }
 

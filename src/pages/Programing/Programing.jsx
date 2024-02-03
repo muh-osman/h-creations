@@ -11,14 +11,14 @@ import webThree from "../../assets/images/website/web-3.avif";
 import webFour from "../../assets/images/website/web-4.avif";
 import webFive from "../../assets/images/website/web-5.avif";
 
-// import logoA from "../../assets/images/website/logo-1.png";
-// import logoB from "../../assets/images/website/logo-2.png";
-// import logoC from "../../assets/images/website/logo-3.png";
-// import logoD from "../../assets/images/website/logo-4.png";
-// import logoE from "../../assets/images/website/logo-5.png";
-// import logoF from "../../assets/images/website/logo-6.png";
-// import logoG from "../../assets/images/website/logo-7.png";
-// import logoH from "../../assets/images/website/logo-8.png";
+import logoA from "../../assets/images/website/app-1.jpeg";
+import logoB from "../../assets/images/website/app-2.jpeg";
+import logoC from "../../assets/images/website/app-3.jpeg";
+import logoD from "../../assets/images/website/app-4.jpeg";
+import logoE from "../../assets/images/website/app-5.jpeg";
+import logoF from "../../assets/images/website/app-6.jpeg";
+import logoG from "../../assets/images/website/app-7.jpeg";
+import logoH from "../../assets/images/website/app-8.jpeg";
 
 import storeOne from "../../assets/images/website/store-1.jpg";
 import storeTwo from "../../assets/images/website/store-2.jpg";
@@ -37,6 +37,16 @@ export default function Programing() {
 
   return (
     <article className={style.container}>
+
+      <section className={style.C}>
+        <h1>برمجة وتصميم مواقع تعريفية</h1>
+        <div className={style.img_box_C}>
+          <div>
+            <img src={webFive} alt="programing" />
+          </div>
+        </div>
+      </section>
+
       <section className={style.A}>
         <h1>نماذج لمواقع إلكترونية</h1>
         <div className={style.img_box_A}>
@@ -60,45 +70,6 @@ export default function Programing() {
           </div>
         </div>
       </section>
-
-      <section className={style.C}>
-        <h1>برمجة وتصميم مواقع تعريفية</h1>
-        <div className={style.img_box_C}>
-          <div>
-            <img src={webFive} alt="programing" />
-          </div>
-        </div>
-      </section>
-
-      {/* <section className={style.D}>
-        <h1>برمجة وتصميم تطبيقات</h1>
-        <div className={style.img_box_D}>
-          <div>
-            <img src={logoA} alt="programing" />
-          </div>
-          <div>
-            <img src={logoB} alt="programing" />
-          </div>
-          <div>
-            <img src={logoC} alt="programing" />
-          </div>
-          <div>
-            <img src={logoD} alt="programing" />
-          </div>
-          <div>
-            <img src={logoE} alt="programing" />
-          </div>
-          <div>
-            <img src={logoF} alt="programing" />
-          </div>
-          <div>
-            <img src={logoG} alt="programing" />
-          </div>
-          <div>
-            <img src={logoH} alt="programing" />
-          </div>
-        </div>
-      </section> */}
 
       <section className={style.E}>
         <h1>إنشاء متاجر الكترونية</h1>
@@ -166,6 +137,37 @@ export default function Programing() {
           </div>
         </div>
       </section>
+
+      <section className={style.D}>
+        <h1>برمجة وتصميم تطبيقات الجوال</h1>
+        <div className={style.img_box_D}>
+          <div>
+            <img src={logoA} alt="programing" />
+          </div>
+          <div>
+            <img src={logoB} alt="programing" />
+          </div>
+          <div>
+            <img src={logoC} alt="programing" />
+          </div>
+          <div>
+            <img src={logoD} alt="programing" />
+          </div>
+          <div>
+            <img src={logoE} alt="programing" />
+          </div>
+          <div>
+            <img src={logoF} alt="programing" />
+          </div>
+          <div>
+            <img src={logoG} alt="programing" />
+          </div>
+          <div>
+            <img src={logoH} alt="programing" />
+          </div>
+        </div>
+      </section>
+      
     </article>
   );
 }

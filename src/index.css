@@ -31,11 +31,25 @@ button {
 
 nav {
   box-shadow: 0 6px 14px #0000001a !important;
+  /* background: rgba(255, 255, 255, 0.5); */
+  /* backdrop-filter: blur(4.5px); */
 }
 
 .bg-body-tertiary,
 .offcanvas {
   background-color: #fbfbfb !important;
+}
+
+@media (min-width: 991px) {
+  nav {
+    background: rgba(255, 255, 255, 0.5) !important;
+    backdrop-filter: blur(4.5px) !important;
+  }
+
+  .bg-body-tertiary,
+  .offcanvas {
+    background-color: transparent !important;
+  }
 }
 
 .dropdown-item {
