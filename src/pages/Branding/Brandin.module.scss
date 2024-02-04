@@ -200,3 +200,55 @@
     }
   }
 }
+
+
+.rows {
+
+  margin: auto;
+  width: 85%;
+  margin-top: 64px;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  & > div {
+    margin-bottom: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+
+    div {
+      width: 25%;
+      overflow: hidden;
+      
+      img {
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        width: 100%;
+      }
+    }
+  }
+
+}
+
+@media (max-width: 575px) {
+  
+  .rows {
+  
+    & > div {
+      flex-wrap: wrap;
+  
+      div {
+        width: calc(50% - 16px);
+        overflow: hidden;
+        
+        img {
+          aspect-ratio: 1 / 1;
+          object-fit: cover;
+          width: 100%;
+        }
+      }
+    }
+  
+  }
+}

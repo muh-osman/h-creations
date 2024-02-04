@@ -26,6 +26,31 @@ import iconD from "../../assets/images/branding/icon-4.png";
 import iconE from "../../assets/images/branding/icon-5.webp";
 import iconF from "../../assets/images/branding/icon-6.png";
 
+import rowA from "../../assets/images/branding/row-1.avif";
+import rowB from "../../assets/images/branding/row-2.avif";
+import rowC from "../../assets/images/branding/row-3.avif";
+import rowD from "../../assets/images/branding/row-4.avif";
+import rowE from "../../assets/images/branding/row-5.avif";
+import rowF from "../../assets/images/branding/row-6.avif";
+import rowG from "../../assets/images/branding/row-7.avif";
+import rowH from "../../assets/images/branding/row-8.avif";
+import rowI from "../../assets/images/branding/row-9.avif";
+import rowJ from "../../assets/images/branding/row-10.avif";
+import rowK from "../../assets/images/branding/row-11.avif";
+import rowL from "../../assets/images/branding/row-12.avif";
+import rowM from "../../assets/images/branding/row-13.avif";
+import rowN from "../../assets/images/branding/row-14.avif";
+import rowO from "../../assets/images/branding/row-15.avif";
+import rowP from "../../assets/images/branding/row-16.avif";
+import rowQ from "../../assets/images/branding/row-17.avif";
+import rowR from "../../assets/images/branding/row-18.avif";
+import rowS from "../../assets/images/branding/row-19.avif";
+import rowT from "../../assets/images/branding/row-20.avif";
+import rowU from "../../assets/images/branding/row-21.avif";
+import rowV from "../../assets/images/branding/row-22.avif";
+import rowW from "../../assets/images/branding/row-23.avif";
+import rowX from "../../assets/images/branding/row-24.avif";
+
 export default function Branding() {
   useEffect(() => {
     window.scroll({
@@ -76,7 +101,7 @@ export default function Branding() {
       </section>
 
       <section className={style.carousel}>
-        <h1>هويات بصرية</h1>
+        <h1>الهويات البصرية</h1>
         <div
           id="carouselExampleAutoplaying"
           className="carousel slide carousel-fade"
@@ -144,6 +169,59 @@ export default function Branding() {
           </div>
         </div>
       </section>
+
+      <section className={style.rows}>
+
+      <div>
+          <div><img src={rowI} alt="branding" /></div>
+          <div><img src={rowJ} alt="branding" /></div>
+          <div><img src={rowK} alt="branding" /></div>
+          <div><img src={rowL} alt="branding" /></div>
+        </div>
+        
+        <div>
+          <div><img src={rowA} alt="branding" /></div>
+          <div><img src={rowB} alt="branding" /></div>
+          <div><img src={rowC} alt="branding" /></div>
+          <div><img src={rowD} alt="branding" /></div>
+        </div>
+
+
+
+
+        <div>
+          <div><img src={rowM} alt="branding" /></div>
+          <div><img src={rowN} alt="branding" /></div>
+          <div><img src={rowO} alt="branding" /></div>
+          <div><img src={rowP} alt="branding" /></div>
+        </div>
+
+        
+        <div>
+          <div><img src={rowE} alt="branding" /></div>
+          <div><img src={rowF} alt="branding" /></div>
+          <div><img src={rowG} alt="branding" /></div>
+          <div><img src={rowH} alt="branding" /></div>
+        </div>
+
+        <div>
+          <div><img src={rowQ} alt="branding" /></div>
+          <div><img src={rowR} alt="branding" /></div>
+          <div><img src={rowS} alt="branding" /></div>
+          <div><img src={rowT} alt="branding" /></div>
+        </div>
+
+        <div>
+          <div><img src={rowU} alt="branding" /></div>
+          <div><img src={rowV} alt="branding" /></div>
+          <div><img src={rowW} alt="branding" /></div>
+          <div><img src={rowX} alt="branding" /></div>
+        </div>
+
+      </section>
+
+
+
 
       <section className={style.succsess}>
         <h1>شركاء النجاح</h1>
