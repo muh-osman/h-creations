@@ -54,6 +54,75 @@
   }
 }
 
+// Section C
+.C {
+  padding-top: 64px;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  h1 {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 32px;
+    color: #1a1a1a;
+    font-size: 48px;
+    font-weight: 700;
+  }
+
+  .C_box {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    // flex-wrap: wrap;
+    gap: 32px;
+
+    h3 {
+      text-align: center;
+      font-size: 22px;
+      color: #707171;
+    }
+
+    hr {
+      width: 100%;
+    }
+
+    & > div {
+      padding: 16px;
+      border: 1px solid #eee;
+      border-radius: 16px;
+      width: 400px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      transition: 0.3s;
+      cursor: pointer;
+      background-color: #eee;
+
+      &:hover {
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        transform: scale(1.02);
+      }
+
+      div:nth-child(1) {
+        display: flex;
+        align-items: center;
+        height: 55px;
+      }
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 1050px) {
+  .C_box {
+    flex-wrap: wrap;
+  }
+}
+
 // Section B
 .B {
   // background: linear-gradient(#cba982 1%, #fbfbfb 40%);
@@ -97,6 +166,26 @@
         animation: svg-motion 1.4s ease-in-out infinite alternate;
       }
     }
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 32px;
+      font-size: 22px;
+      font-weight: 500;
+      color: #f1f1f1;
+      background-color: #b6ac9a;
+      border-radius: 64px;
+      padding: 4px 25px;
+      transition: 0.3s;
+      width: fit-content;
+
+      &:hover {
+        color: #007bff;
+        background-color: transparent;
+      }
+    }
   }
 }
 
@@ -111,43 +200,21 @@
 
 @media (max-width: 900px) {
   .B {
-    padding-top: 64px;
-    padding-left: 16px;
-    padding-right: 16px;
-
-    h1 {
-      text-align: center;
-      margin: 0;
-      margin-bottom: 32px;
-      color: #1a1a1a;
-      font-size: 48px;
-      font-weight: 700;
-    }
-
     .B_box {
       flex-direction: column-reverse;
 
       div {
         width: 100%;
-        // padding: 16px;
 
         h2 {
-          font-size: 32px;
-          font-weight: 600;
-          margin-bottom: 32px;
+          font-size: 29px;
+          margin-bottom: 16px;
         }
+      }
 
-        h6 {
-          font-size: 19px;
-          font-weight: 500;
-          color: #707171;
-          line-height: 1.5;
-        }
-
-        img {
-          width: 100%;
-          animation: svg-motion 1.4s ease-in-out infinite alternate;
-        }
+      a {
+        margin: auto;
+        margin-top: 16px;
       }
     }
   }
