@@ -1,12 +1,55 @@
 .container {
-  padding: 32px;
-  padding-top: 132px;
+  padding: 0px;
+  padding-bottom: 32px;
+  padding-top: 100px;
   background-color: #fbfbfb;
+  // background-color: #e1e0e5;
 }
 
 @media (max-width: 575px) {
   .container {
-    padding: 16px;
-    padding-top: 132px;
+    padding: 0px;
+    padding-bottom: 16px;
+    padding-top: 100px;
+  }
+}
+
+// Section A
+.A {
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 16px;
+
+  background-image: url(../../assets/images/markiting/hero.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  h1 {
+    font-size: 5.3125rem;
+    line-height: 0.8;
+    font-weight: 700;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    // padding-right: 150px;
+    color: #333;
+  }
+}
+
+@media (max-width: 1350px) {
+  .A {
+    h1 {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 567px) {
+  .A {
+    height: 350px;
   }
 }

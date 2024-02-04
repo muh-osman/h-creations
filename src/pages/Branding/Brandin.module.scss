@@ -16,7 +16,7 @@
 
 // Section A
 .A {
-  height: 350px;
+  height: 600px;
 
   background-image: url(../../assets/images/branding/cover.jpg);
   background-position: center;
@@ -30,7 +30,7 @@
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: flex-end;
     padding-right: 150px;
     color: #333;
   }
@@ -38,16 +38,10 @@
 
 @media (max-width: 567px) {
   .A {
+    height: 350px;
     h1 {
       font-size: 3rem;
-      line-height: 0.8;
-      font-weight: 700;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
       padding-right: 32px;
-      color: #333;
     }
   }
 }
