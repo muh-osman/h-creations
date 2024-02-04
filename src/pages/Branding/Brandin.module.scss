@@ -170,6 +170,8 @@
     align-items: center;
     justify-content: space-evenly;
     flex-direction: row-reverse;
+    flex-wrap: wrap;
+
     // border-top: 1px solid #888;
     // border-bottom: 1px solid #888;
     padding-top: 32px;

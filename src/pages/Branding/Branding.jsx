@@ -25,6 +25,9 @@ import iconC from "../../assets/images/branding/icon-3.png";
 import iconD from "../../assets/images/branding/icon-4.png";
 import iconE from "../../assets/images/branding/icon-5.webp";
 import iconF from "../../assets/images/branding/icon-6.png";
+import iconG from "../../assets/images/branding/icon-7.png";
+import iconH from "../../assets/images/branding/icon-8.png";
+import iconI from "../../assets/images/branding/icon-9.png";
 
 import rowA from "../../assets/images/branding/row-1.avif";
 import rowB from "../../assets/images/branding/row-2.avif";
@@ -265,6 +268,8 @@ export default function Branding() {
       <section className={style.succsess}>
         <h1>شركاء النجاح</h1>
 
+        <hr />
+
         <div className={style.box}>
           <div>
             <img src={iconA} alt="logo" />
@@ -273,10 +278,16 @@ export default function Branding() {
             <img src={iconB} alt="logo" />
           </div>
           <div>
+            <img src={iconG} alt="logo" />
+          </div>
+          <div>
             <img src={iconC} alt="logo" />
           </div>
           <div>
             <img src={iconD} alt="logo" />
+          </div>
+          <div>
+            <img src={iconH} alt="logo" />
           </div>
           <div>
             <img src={iconE} alt="logo" />
@@ -284,7 +295,12 @@ export default function Branding() {
           <div>
             <img src={iconF} alt="logo" />
           </div>
+          <div>
+            <img src={iconI} alt="logo" />
+          </div>
         </div>
+
+        <hr />
       </section>
     </div>
   );
