@@ -13,9 +13,9 @@ import servC from "../../assets/images/markiting/Influencer.png";
 import servD from "../../assets/images/markiting/social.png";
 import servE from "../../assets/images/markiting/email.png";
 
-import inful from "../../assets/images/markiting/Influ.webp";
+import inful from "../../assets/images/markiting/Influ.png";
 
-import soc from "../../assets/images/markiting/soc.webp";
+import soc from "../../assets/images/markiting/soc.png";
 
 import mail from "../../assets/images/markiting/mail.png";
 

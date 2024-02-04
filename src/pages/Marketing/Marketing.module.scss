@@ -80,6 +80,7 @@
       text-align: center;
       font-size: 22px;
       color: #707171;
+      transition: 0.2s;
     }
 
     hr {
@@ -102,6 +103,10 @@
       &:hover {
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 9px 0px;
         transform: scale(1.02);
+      }
+
+      &:hover h3 {
+        color: #1a1a1a !important;
       }
 
       div:nth-child(1) {
