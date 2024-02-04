@@ -64,8 +64,8 @@ export default function Branding() {
   }, []);
 
   return (
-    <div className={style.container} dir="ltr">
-      <section className={style.A}>
+    <div className={style.container}>
+      <section className={style.A} dir="ltr">
         <h1>
           BRAND
           <br />
