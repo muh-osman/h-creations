@@ -100,7 +100,7 @@
       background-color: #eee;
 
       &:hover {
-        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 9px 0px;
         transform: scale(1.02);
       }
 
@@ -126,14 +126,14 @@
 // Section B
 .B {
   // background: linear-gradient(#cba982 1%, #fbfbfb 40%);
-  padding-top: 64px;
+  padding-top: 84px;
   padding-left: 16px;
   padding-right: 16px;
 
   h1 {
     text-align: center;
     margin: 0;
-    margin-bottom: 32px;
+    margin-bottom: 16px;
     color: #1a1a1a;
     font-size: 48px;
     font-weight: 700;
@@ -143,6 +143,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    div:nth-child(2) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
     div {
       width: 50%;
@@ -201,6 +207,214 @@
 @media (max-width: 900px) {
   .B {
     .B_box {
+      flex-direction: column-reverse;
+
+      div {
+        width: 100%;
+
+        h2 {
+          font-size: 29px;
+          margin-bottom: 16px;
+        }
+      }
+
+      a {
+        margin: auto;
+        margin-top: 16px;
+      }
+    }
+  }
+}
+
+// D section
+.D {
+  // background: linear-gradient(#cba982 1%, #fbfbfb 40%);
+  padding-top: 84px;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  h1 {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 16px;
+    color: #1a1a1a;
+    font-size: 48px;
+    font-weight: 700;
+  }
+
+  .D_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+
+    div:nth-child(2) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    div {
+      width: 50%;
+      padding: 16px;
+
+      h2 {
+        font-size: 32px;
+        font-weight: 600;
+        margin-bottom: 32px;
+      }
+
+      h6 {
+        font-size: 19px;
+        font-weight: 500;
+        color: #707171;
+        line-height: 1.5;
+      }
+
+      img {
+        width: 100%;
+        animation: svg-motion 1.4s ease-in-out infinite alternate;
+      }
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 32px;
+      font-size: 22px;
+      font-weight: 500;
+      color: #f1f1f1;
+      background-color: #b6ac9a;
+      border-radius: 64px;
+      padding: 4px 25px;
+      transition: 0.3s;
+      width: fit-content;
+
+      &:hover {
+        color: #007bff;
+        background-color: transparent;
+      }
+    }
+  }
+}
+
+@keyframes svg-motion {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-12px);
+  }
+}
+
+@media (max-width: 900px) {
+  .D {
+    .D_box {
+      flex-direction: column-reverse;
+
+      div {
+        width: 100%;
+
+        h2 {
+          font-size: 29px;
+          margin-bottom: 16px;
+        }
+      }
+
+      a {
+        margin: auto;
+        margin-top: 16px;
+      }
+    }
+  }
+}
+
+// E section
+.E {
+  // background: linear-gradient(#cba982 1%, #fbfbfb 40%);
+  padding-top: 84px;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  h1 {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 16px;
+    color: #1a1a1a;
+    font-size: 48px;
+    font-weight: 700;
+  }
+
+  .E_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+
+    div:nth-child(2) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    div {
+      width: 50%;
+      padding: 16px;
+
+      h2 {
+        font-size: 32px;
+        font-weight: 600;
+        margin-bottom: 32px;
+      }
+
+      h6 {
+        font-size: 19px;
+        font-weight: 500;
+        color: #707171;
+        line-height: 1.5;
+      }
+
+      img {
+        width: 100%;
+        animation: svg-motion 1.4s ease-in-out infinite alternate;
+      }
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 32px;
+      font-size: 22px;
+      font-weight: 500;
+      color: #f1f1f1;
+      background-color: #b6ac9a;
+      border-radius: 64px;
+      padding: 4px 25px;
+      transition: 0.3s;
+      width: fit-content;
+
+      &:hover {
+        color: #007bff;
+        background-color: transparent;
+      }
+    }
+  }
+}
+
+@keyframes svg-motion {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-12px);
+  }
+}
+
+@media (max-width: 900px) {
+  .E {
+    .E_box {
       flex-direction: column-reverse;
 
       div {
