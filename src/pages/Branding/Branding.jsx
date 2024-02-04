@@ -19,6 +19,13 @@ import brandD from "../../assets/images/branding/brand-4.jpg";
 import brandE from "../../assets/images/branding/brand-5.jpg";
 import brandF from "../../assets/images/branding/brand-6.jpg";
 
+import iconA from "../../assets/images/branding/icon-1.png";
+import iconB from "../../assets/images/branding/icon-2.png";
+import iconC from "../../assets/images/branding/icon-3.png";
+import iconD from "../../assets/images/branding/icon-4.png";
+import iconE from "../../assets/images/branding/icon-5.webp";
+import iconF from "../../assets/images/branding/icon-6.png";
+
 export default function Branding() {
   useEffect(() => {
     window.scroll({
@@ -30,11 +37,12 @@ export default function Branding() {
 
   return (
     <div className={style.container}>
-
       <section className={style.A}>
-
-        <h1>BRAND<br/>DESIGN</h1>
-
+        <h1>
+          BRAND
+          <br />
+          DESIGN
+        </h1>
       </section>
 
       <section className={style.D}>
@@ -133,6 +141,31 @@ export default function Branding() {
             <div className="carousel-item" data-bs-interval="2500">
               <img src={brandF} className="d-block w-100" alt="branding" />
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className={style.succsess}>
+        <h1>شركاء النجاح</h1>
+
+        <div className={style.box}>
+          <div>
+            <img src={iconA} alt="logo" />
+          </div>
+          <div>
+            <img src={iconB} alt="logo" />
+          </div>
+          <div>
+            <img src={iconC} alt="logo" />
+          </div>
+          <div>
+            <img src={iconD} alt="logo" />
+          </div>
+          <div>
+            <img src={iconE} alt="logo" />
+          </div>
+          <div>
+            <img src={iconF} alt="logo" />
           </div>
         </div>
       </section>

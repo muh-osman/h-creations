@@ -37,6 +37,14 @@ export default function Programing() {
 
   return (
     <article className={style.container}>
+      <section className={style.O} dir="ltr">
+        <h1>
+          CREATE
+          <br />
+          WEBSITES
+        </h1>
+      </section>
+
       <section className={style.C}>
         <h1>برمجة وتصميم مواقع تعريفية</h1>
         <div className={style.img_box_C}>
