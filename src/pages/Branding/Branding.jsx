@@ -171,57 +171,96 @@ export default function Branding() {
       </section>
 
       <section className={style.rows}>
-
-      <div>
-          <div><img src={rowI} alt="branding" /></div>
-          <div><img src={rowJ} alt="branding" /></div>
-          <div><img src={rowK} alt="branding" /></div>
-          <div><img src={rowL} alt="branding" /></div>
-        </div>
-        
         <div>
-          <div><img src={rowA} alt="branding" /></div>
-          <div><img src={rowB} alt="branding" /></div>
-          <div><img src={rowC} alt="branding" /></div>
-          <div><img src={rowD} alt="branding" /></div>
-        </div>
-
-
-
-
-        <div>
-          <div><img src={rowM} alt="branding" /></div>
-          <div><img src={rowN} alt="branding" /></div>
-          <div><img src={rowO} alt="branding" /></div>
-          <div><img src={rowP} alt="branding" /></div>
-        </div>
-
-        
-        <div>
-          <div><img src={rowE} alt="branding" /></div>
-          <div><img src={rowF} alt="branding" /></div>
-          <div><img src={rowG} alt="branding" /></div>
-          <div><img src={rowH} alt="branding" /></div>
+          <div>
+            <img src={rowI} alt="branding" />
+          </div>
+          <div>
+            <img src={rowJ} alt="branding" />
+          </div>
+          <div>
+            <img src={rowK} alt="branding" />
+          </div>
+          <div>
+            <img src={rowL} alt="branding" />
+          </div>
         </div>
 
         <div>
-          <div><img src={rowQ} alt="branding" /></div>
-          <div><img src={rowR} alt="branding" /></div>
-          <div><img src={rowS} alt="branding" /></div>
-          <div><img src={rowT} alt="branding" /></div>
+          <div>
+            <img src={rowA} alt="branding" />
+          </div>
+          <div>
+            <img src={rowB} alt="branding" />
+          </div>
+          <div>
+            <img src={rowC} alt="branding" />
+          </div>
+          <div>
+            <img src={rowD} alt="branding" />
+          </div>
         </div>
 
         <div>
-          <div><img src={rowU} alt="branding" /></div>
-          <div><img src={rowV} alt="branding" /></div>
-          <div><img src={rowW} alt="branding" /></div>
-          <div><img src={rowX} alt="branding" /></div>
+          <div>
+            <img src={rowM} alt="branding" />
+          </div>
+          <div>
+            <img src={rowN} alt="branding" />
+          </div>
+          <div>
+            <img src={rowO} alt="branding" />
+          </div>
+          <div>
+            <img src={rowP} alt="branding" />
+          </div>
         </div>
 
+        <div>
+          <div>
+            <img src={rowE} alt="branding" />
+          </div>
+          <div>
+            <img src={rowF} alt="branding" />
+          </div>
+          <div>
+            <img src={rowG} alt="branding" />
+          </div>
+          <div>
+            <img src={rowH} alt="branding" />
+          </div>
+        </div>
+
+        <div>
+          <div>
+            <img src={rowQ} alt="branding" />
+          </div>
+          <div>
+            <img src={rowR} alt="branding" />
+          </div>
+          <div>
+            <img src={rowS} alt="branding" />
+          </div>
+          <div>
+            <img src={rowT} alt="branding" />
+          </div>
+        </div>
+
+        <div>
+          <div>
+            <img src={rowU} alt="branding" />
+          </div>
+          <div>
+            <img src={rowV} alt="branding" />
+          </div>
+          <div>
+            <img src={rowW} alt="branding" />
+          </div>
+          <div>
+            <img src={rowX} alt="branding" />
+          </div>
+        </div>
       </section>
-
-
-
 
       <section className={style.succsess}>
         <h1>شركاء النجاح</h1>
