@@ -2,6 +2,8 @@
 import { useEffect } from 'react';
 // Sass
 import style from './SocialMedia.module.scss'
+// Images
+import hero from "../../assets/images/social/social-marketing.webp";
 
 export default function SocialMedia() {
 
@@ -15,6 +17,15 @@ export default function SocialMedia() {
 
 
   return (
-    <div className={style.container}>SocialMedia page</div>
+    <article className={style.container}>
+      
+      <section className={style.hero}>
+      </section>
+
+      
+      <section className={style.A}>
+      </section>
+
+    </article>
   )
 }

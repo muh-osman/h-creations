@@ -1,12 +1,37 @@
 .container {
-  padding: 32px;
-  padding-top: 132px;
+  padding: 0px;
+  padding-bottom: 32px;
+  padding-top: 100px;
   background-color: #fbfbfb;
+  // background: linear-gradient(#e3c5c5 15%, #fbfbfb 30%);
 }
 
 @media (max-width: 575px) {
   .container {
-    padding: 16px;
-    padding-top: 132px;
+    padding: 0px;
+    padding-bottom: 16px;
+    padding-top: 100px;
   }
+}
+
+// Hero
+.hero {
+  height: 400px;
+  // aspect-ratio: 16 / 9;
+  background-image: url(../../assets/images/social/social-marketing.webp);
+  background-position: top;
+  // background-position-x: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 567px) {
+  .hero {
+    height: 180px;
+  }
+}
+
+// A
+.A {
+  
 }
