@@ -1,3 +1,7 @@
+// Slider
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 // React
 import { useEffect } from "react";
 // React router
@@ -9,7 +13,53 @@ import instagram from "../../assets/images/social/instagram.webp";
 import snapchat from "../../assets/images/social/snapchat.png";
 import tiktok from "../../assets/images/social/tiktok.webp";
 
+// Images
+import man1 from "../../assets/images/social/man-1.png";
+import man2 from "../../assets/images/social/man-2.jpg";
+import man3 from "../../assets/images/social/man-3.jpg";
+import man4 from "../../assets/images/social/man-4.jpg";
+import man5 from "../../assets/images/social/man-5.jpg";
+import man6 from "../../assets/images/social/man-6.jpg";
+
 export default function SocialMedia() {
+  const settings = {
+    dots: true,
+    infinite: false,
+    speed: 1000,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    touchMove: true,
+    useCSS: true,
+
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 1000,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
+
   useEffect(() => {
     window.scroll({
       top: 0,
@@ -104,7 +154,7 @@ export default function SocialMedia() {
         </article>
       </main>
 
-      <h1 style={{ textAlign: "center", fontWeight: "700", marginTop: "64px" }}>
+      <h1 style={{ textAlign: "center", fontWeight: "700", marginTop: "64px", color: "#0d2f3f", fontSize: "48px" }}>
         مشاريع نعمل عليها الآن
       </h1>
       <section className={style.B} id="services">
@@ -162,6 +212,85 @@ export default function SocialMedia() {
               <h3>عميل</h3>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section id="testimonials">
+        <h1>من آراء عملائنا</h1>
+        <p>
+          فخورين أننا كنا شركاء بصناعة جزء من نجاح شركائنا الرائعين وسعيدين أننا
+          أسعدناهم!
+        </p>
+
+        <div className="comments">
+          <Slider {...settings} className="slider">
+            <div className="testtimonial-card comment">
+              <img src={man1} alt="" />
+              <p dir="rtl">
+                شركة محترمة ومحترفين في خدمات التسويق, نشهد لشركة H creation
+                بالاحترام والاحترافية العالية في تعاملهم معنا. فهم يتمتعون
+                بمستوى عالٍ من الشفافية والتفاهم
+              </p>
+              <hr />
+              <h3>عبدالله رضوان</h3>
+              <h6>Writer</h6>
+            </div>
+            <div className="testtimonial-card">
+              <img src={man2} alt="" />
+              <p dir="rtl">
+                نوصي بشدة بالتعاون مع شركة H creation إذا كنتم تبحثون عن شريك
+                موثوق ومؤهل في مجال التسويق الإلكتروني. فهم يضمنون لكم نتائج
+                ممتازة وتجربة محترفة تفوق توقعاتكم.
+              </p>
+              <hr />
+              <h3>فهد حميد</h3>
+              <h6>Journalist</h6>
+            </div>
+            <div className="testtimonial-card">
+              <img src={man3} alt="" />
+              <p>
+                شركة متميزة جدا في ادارة السوشيل ميدا والاعلانات المدفوعة
+                ساعدونا كثير في التفاعل وجلب كثير من الاشتراكات نشكركم جزيلا على
+                التعاون معكم وان شاء الله من المزيد من النجاح لكم معنا ومعكم
+              </p>
+              <hr />
+              <h3>محمد راشد</h3>
+              <h6>CTO</h6>
+            </div>
+            <div className="testtimonial-card">
+              <img src={man4} alt="" />
+              <p dir="rtl">
+                شركة H Creations تعتبر من الشركات الصادقة في التعامل معنا في
+                انشاء المواقع باحترافية نشكركم على انشاء الموقع لنا
+              </p>
+              <hr />
+              <h3>عبدالرحمن السبع</h3>
+              <h6>Youtuber</h6>
+            </div>
+            <div className="testtimonial-card">
+              <img src={man5} alt="" />
+              <p dir="rtl">
+                شركة H creation للتسويق الالكترونية ساعدونا في انشاء الهوية
+                والبيزنس من البداية شركتنا مع ادارة الموقع والسوشيل ميديا
+                والاعلانات المدفوعة نشهد لهم بالاحترام والاحترافية والشفافية
+              </p>
+              <hr />
+              <h3>عمر الجندي</h3>
+              <h6>Influencer</h6>
+            </div>
+            <div className="testtimonial-card">
+              <img src={man6} alt="" />
+              <p dir="rtl">
+                شركة H creation للتسويق الالكترونية هي الشريك الأمثل لنا في بناء
+                هويتنا وتطوير أعمالنا من البداية. فقد قدموا لنا دعمًا قويًا في
+                إدارة موقعنا والتواجد على وسائل التواصل الاجتماعي، بالإضافة إلى
+                إدارة حملات الإعلان المدفوعة.
+              </p>
+              <hr />
+              <h3>علي شبانة</h3>
+              <h6>Businessman</h6>
+            </div>
+          </Slider>
         </div>
       </section>
     </article>
