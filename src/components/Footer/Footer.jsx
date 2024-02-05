@@ -17,8 +17,8 @@ export default function Footer() {
           <a href="mailto:info@h-creations.net">
             <FaEnvelope /> info@h-creations.net
           </a>
-          <a href="https://wa.me/00966987654321">
-            <FaWhatsapp /> +966-987654321
+          <a href="https://wa.me/00966508175802">
+            <FaWhatsapp /> +966-508175802
           </a>
         </div>
 

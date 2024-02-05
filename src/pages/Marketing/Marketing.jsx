@@ -140,8 +140,7 @@ export default function Marketing() {
           </div>
           <div>
             <iframe
-              width={560}
-              height={315}
+
               src="https://www.youtube.com/embed/e8wJBq6vOAI?si=LgcI_fcexWsER2KJ"
               title="YouTube video player"
               frameBorder={0}

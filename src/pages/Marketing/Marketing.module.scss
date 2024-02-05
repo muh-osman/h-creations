@@ -249,14 +249,20 @@
 
   .D_box {
     display: flex;
-    align-items: center;
     justify-content: center;
     flex-direction: row-reverse;
+    margin-bottom: 32px;
+    margin-top: 32px;
 
     div:nth-child(2) {
       display: flex;
       align-items: center;
       justify-content: center;
+
+      iframe {
+      aspect-ratio: 16 / 9;
+      width: 100% !important;
+      }
     }
 
     div {

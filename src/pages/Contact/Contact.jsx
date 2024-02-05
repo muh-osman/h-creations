@@ -2,13 +2,21 @@
 import style from "./Contact.module.scss";
 // Image
 import contact from "../../assets/images/contact/contact.svg";
+import thankyou from "../../assets/images/contact/thankyou.png";
 //
 import useWindowDimensions from "../../utiles/useWindowDimensions";
 // React
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 export default function Contact() {
-  
+  const [loading, setLoading] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
+
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [message, setMessage] = useState("");
+
   useEffect(() => {
     window.scroll({
       top: 0,
@@ -19,6 +27,27 @@ export default function Contact() {
 
   const { width } = useWindowDimensions();
 
+  const scriptURL =
+    "https://script.google.com/macros/s/AKfycbz1DQpJKDJQCzcFCidNIT1G4f7YeXblkhSMFNyud05DdPkb_tX7Tb2JMIMDLCgmeseGEA/exec";
+
+  const form = document.forms["submit-to-google-sheet"];
+
+  async function handleSubmit(e) {
+    e.preventDefault();
+    setLoading(true);
+
+    try {
+      const res = await fetch(scriptURL, {
+        method: "POST",
+        body: new FormData(form),
+      });
+      console.log("Success!", res);
+      setSubmitted(true);
+    } catch (error) {
+      console.error("Error!", error.message);
+      setLoading(false);
+    }
+  }
 
   return (
     <div className={style.container}>
@@ -31,7 +60,8 @@ export default function Contact() {
       <div className={style.contact_box}>
         <div className={style.form_box}>
           <h1>تواصل معنا</h1>
-          <form>
+
+          <form name="submit-to-google-sheet" onSubmit={handleSubmit}>
             {/* الاسم */}
             <div className="mb-3">
               <label htmlFor="exampleInputEmail2" className="form-label">
@@ -39,10 +69,13 @@ export default function Contact() {
               </label>
               <input
                 type="text"
+                name="name"
                 className="form-control"
                 id="exampleInputEmail2"
                 aria-describedby="emailHelp"
                 required
+                value={name}
+                onChange={(e) => setName(e.target.value)}
               />
             </div>
             {/*  البريد الالكتروني */}
@@ -52,10 +85,13 @@ export default function Contact() {
               </label>
               <input
                 type="email"
+                name="email"
                 className="form-control"
                 id="exampleInputEmail1"
                 aria-describedby="emailHelp"
                 required
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
               />
             </div>
             {/* رقم الهاتف */}
@@ -65,8 +101,11 @@ export default function Contact() {
               </label>
               <input
                 type="number"
+                name="phone"
                 className="form-control"
                 id="exampleInputPassword1"
+                value={phone}
+                onChange={(e) => setPhone(e.target.value)}
               />
             </div>
 
@@ -80,15 +119,40 @@ export default function Contact() {
               </label>
               <textarea
                 className="form-control"
+                name="message"
                 id="exampleFormControlTextarea1"
                 rows="3"
                 required
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
               ></textarea>
             </div>
 
-            <button type="submit" className="btn btn-primary w-100 special">
-              إرسال
+            <button
+              type="submit"
+              className="btn btn-primary w-100 special"
+              disabled={loading}
+            >
+              {loading ? (
+                <span
+                  className="spinner-border spinner-border-sm"
+                  aria-hidden="true"
+                ></span>
+              ) : (
+                "إرسال"
+              )}
             </button>
+
+            <div
+              className={style.form_overlay}
+              style={submitted ? { height: "100%" } : null}
+            >
+              <div>
+                <img src={thankyou} alt="thank you" />
+              </div>
+              <h3>شكرا</h3>
+              <h3>تم ارسال طلبك بنجاح</h3>
+            </div>
           </form>
         </div>
 
