@@ -116,6 +116,16 @@ nav {
   }
 }
 
+.navbar-toggler {
+  border: none;
+  box-shadow: none !important;
+}
+
+.offcanvas-body {
+  display: flex;
+  flex-direction: column;
+}
+
 /* form */
 .btn-primary {
   background-color: #b6ac9a !important;
@@ -165,6 +175,7 @@ nav {
   cursor: pointer;
   box-shadow: none;
   transition: box-shadow 0.2s;
+  box-shadow: 0 21px 13px #0000000a;
 }
 
 .left-services h2 {
@@ -205,10 +216,6 @@ nav {
   display: flex;
   flex-direction: column;
   gap: 32px;
-}
-
-.left-services > div:hover {
-  box-shadow: 0 21px 13px #0000000a;
 }
 
 .right-services {
@@ -281,7 +288,6 @@ main.experience {
   margin-bottom: 96px;
   text-align: center;
   color: #0d2f3f;
-
 }
 
 .experience h2 {

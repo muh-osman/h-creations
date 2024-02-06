@@ -161,6 +161,7 @@ export default function SocialMedia() {
           marginTop: "64px",
           color: "#0d2f3f",
           fontSize: "48px",
+          padding: "16px",
         }}
       >
         مشاريع نعمل عليها الآن
@@ -173,7 +174,7 @@ export default function SocialMedia() {
             </div>
             <div className="services-title">
               <h2>صفحة انستغرام</h2>
-              <h3>76 صفحة</h3>
+              <h3>16 صفحة</h3>
             </div>
           </div>
 
@@ -183,7 +184,7 @@ export default function SocialMedia() {
             </div>
             <div className="services-title">
               <h2>حساب سناب شات</h2>
-              <h3>63 حساب</h3>
+              <h3>13 حساب</h3>
             </div>
           </div>
 
@@ -193,7 +194,7 @@ export default function SocialMedia() {
             </div>
             <div className="services-title">
               <h2>حساب تيك توك</h2>
-              <h3>47 حساب</h3>
+              <h3>10 حساب</h3>
             </div>
           </div>
         </div>
@@ -281,7 +282,7 @@ export default function SocialMedia() {
               <p dir="rtl">
                 شركة H creation للتسويق الالكترونية ساعدونا في انشاء الهوية
                 والبيزنس من البداية شركتنا مع ادارة الموقع والسوشيل ميديا
-                والاعلانات المدفوعة نشهد لهم بالاحترام والاحترافية والشفافية
+                والاعلانات المدفوعة نشهد لهم بالاحترام والشفافية
               </p>
               <hr />
               <h3>عمر الجندي</h3>

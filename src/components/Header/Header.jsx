@@ -7,16 +7,21 @@ import { Link, NavLink } from "react-router-dom";
 // Icons
 import {
   FaHouse,
-  FaBriefcase,
   FaHeadphones,
   FaInfo,
   FaBullhorn,
   FaHashtag,
   FaCode,
   FaFontAwesome,
+  FaXTwitter,
+  FaFacebook,
+  FaInstagram,
 } from "react-icons/fa6";
 // Logo
 import logo from "../../assets/images/logo.webp";
+
+
+
 
 export default function Header() {
   const closeBtn = useRef();
@@ -74,60 +79,6 @@ export default function Header() {
                 </NavLink>
               </li>
 
-              {/* <li className="nav-item dropdown">
-                <a
-                  className="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  <FaBriefcase className="uniform-icon" />
-                  نماذج الأعمال
-                </a>
-                <ul className="dropdown-menu" dir="rtl">
-                  <li>
-                    <NavLink
-                      className="dropdown-item"
-                      to="marketing"
-                      onClick={closeSideBar}
-                    >
-                      التسويق
-                    </NavLink>
-                  </li>
-
-                  <li>
-                    <NavLink
-                      className="dropdown-item"
-                      to="branding"
-                      onClick={closeSideBar}
-                    >
-                      الهويات البصرية
-                    </NavLink>
-                  </li>
-
-                  <li>
-                    <NavLink
-                      className="dropdown-item"
-                      to="socialmedia"
-                      onClick={closeSideBar}
-                    >
-                      إدارة السوشيال ميديا
-                    </NavLink>
-                  </li>
-
-                  <li>
-                    <NavLink
-                      className="dropdown-item"
-                      to="programing"
-                      onClick={closeSideBar}
-                    >
-                      برمجة المواقع الإلكترونية
-                    </NavLink>
-                  </li>
-                </ul>
-              </li> */}
-
               <li className="nav-item">
                 <NavLink
                   className="nav-link anchor"
@@ -136,6 +87,17 @@ export default function Header() {
                 >
                   <FaBullhorn className="uniform-icon" />
                   التسويق
+                </NavLink>
+              </li>
+
+              <li className="nav-item">
+                <NavLink
+                  className="nav-link anchor"
+                  to="programing"
+                  onClick={closeSideBar}
+                >
+                  <FaCode className="uniform-icon" />
+                  برمجة المواقع
                 </NavLink>
               </li>
 
@@ -164,17 +126,6 @@ export default function Header() {
               <li className="nav-item">
                 <NavLink
                   className="nav-link anchor"
-                  to="programing"
-                  onClick={closeSideBar}
-                >
-                  <FaCode className="uniform-icon" />
-                  برمجة المواقع
-                </NavLink>
-              </li>
-
-              <li className="nav-item">
-                <NavLink
-                  className="nav-link anchor"
                   to="about"
                   onClick={closeSideBar}
                 >
@@ -192,6 +143,21 @@ export default function Header() {
                 </NavLink>
               </li>
             </ul>
+
+            <div className={style.social_media_icon_box}>
+              <div className={style.social_media_icon}>
+                <a href="https://twitter.com">
+                  <FaInstagram />
+                </a>
+                <a href="https://www.facebook.com">
+                  <FaFacebook />
+                </a>
+                <a href="https://www.instagram.com">
+                  <FaXTwitter />
+                </a>
+              </div>
+        </div>
+
           </div>
         </div>
       </div>

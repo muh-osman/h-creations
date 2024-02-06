@@ -4,10 +4,12 @@ import style from "./Home.module.scss";
 import { Link } from "react-router-dom";
 // Images
 import hero from "../../assets/images/home/hero.avif";
-import iconOne from "../../assets/images/home/icon-1.avif";
-import iconTwo from "../../assets/images/home/icon-2.avif";
-import iconThree from "../../assets/images/home/icon-3.avif";
-import iconFour from "../../assets/images/home/icon-4.avif";
+
+import iconOne from "../../assets/images/home/coding.svg";
+import iconTwo from "../../assets/images/home/mangment.svg";
+import iconThree from "../../assets/images/home/marketing.svg";
+import iconFour from "../../assets/images/home/graphic.svg";
+
 import branding from "../../assets/images/home/branding.png";
 import social from "../../assets/images/home/social.png";
 import designOne from "../../assets/images/home/design-1.png";
