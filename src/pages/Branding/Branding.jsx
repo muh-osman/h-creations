@@ -324,7 +324,6 @@ export default function Branding() {
           </div>
         </div>
 
-        <hr />
       </section>
     </div>
   );
