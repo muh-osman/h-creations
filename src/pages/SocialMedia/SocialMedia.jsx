@@ -1,7 +1,7 @@
 // Slider
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+// import Slider from "react-slick";
+// import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick-theme.css";
 // React
 import { useEffect } from "react";
 // React router
@@ -14,51 +14,52 @@ import snapchat from "../../assets/images/social/snapchat.png";
 import tiktok from "../../assets/images/social/tiktok.webp";
 
 // Images
-import man1 from "../../assets/images/social/man-1.png";
-import man2 from "../../assets/images/social/man-2.jpg";
-import man3 from "../../assets/images/social/man-3.jpg";
-import man4 from "../../assets/images/social/man-4.jpg";
-import man5 from "../../assets/images/social/man-5.jpg";
-import man6 from "../../assets/images/social/man-6.jpg";
+// import man1 from "../../assets/images/social/man-1.png";
+// import man2 from "../../assets/images/social/man-2.jpg";
+// import man3 from "../../assets/images/social/man-3.jpg";
+// import man4 from "../../assets/images/social/man-4.jpg";
+// import man5 from "../../assets/images/social/man-5.jpg";
+// import man6 from "../../assets/images/social/man-6.jpg";
 
 export default function SocialMedia() {
-  const settings = {
-    dots: true,
-    infinite: false,
-    speed: 1000,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    initialSlide: 0,
-    touchMove: true,
-    useCSS: true,
+  
+  // const settings = {
+  //   dots: true,
+  //   infinite: false,
+  //   speed: 1000,
+  //   slidesToShow: 3,
+  //   slidesToScroll: 1,
+  //   initialSlide: 0,
+  //   touchMove: true,
+  //   useCSS: true,
 
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-          dots: true,
-        },
-      },
-      {
-        breakpoint: 1000,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  };
+  //   responsive: [
+  //     {
+  //       breakpoint: 1024,
+  //       settings: {
+  //         slidesToShow: 3,
+  //         slidesToScroll: 3,
+  //         infinite: true,
+  //         dots: true,
+  //       },
+  //     },
+  //     {
+  //       breakpoint: 1000,
+  //       settings: {
+  //         slidesToShow: 2,
+  //         slidesToScroll: 2,
+  //         initialSlide: 2,
+  //       },
+  //     },
+  //     {
+  //       breakpoint: 480,
+  //       settings: {
+  //         slidesToShow: 1,
+  //         slidesToScroll: 1,
+  //       },
+  //     },
+  //   ],
+  // };
 
   useEffect(() => {
     window.scroll({
@@ -159,7 +160,6 @@ export default function SocialMedia() {
           textAlign: "center",
           fontWeight: "700",
           marginTop: "64px",
-          color: "#0d2f3f",
           fontSize: "48px",
           padding: "16px",
         }}
@@ -224,7 +224,7 @@ export default function SocialMedia() {
         </div>
       </section>
 
-      <section id="testimonials">
+      {/* <section id="testimonials">
         <h1>من آراء عملائنا</h1>
         <p>
           فخورين أننا كنا شركاء بصناعة جزء من نجاح شركائنا الرائعين وسعيدين أننا
@@ -301,7 +301,9 @@ export default function SocialMedia() {
             </div>
           </Slider>
         </div>
-      </section>
+      </section> */}
+
+
     </article>
   );
 }

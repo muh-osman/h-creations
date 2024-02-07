@@ -5,19 +5,19 @@ import { Link } from "react-router-dom";
 // Sass
 import style from "./Marketing.module.scss";
 // Images
-import seo from "../../assets/images/markiting/seo.png";
+import seo from "../../assets/images/markiting/seo.svg";
 
-import servA from "../../assets/images/markiting/ads.png";
-import servB from "../../assets/images/markiting/seo-service.png";
-import servC from "../../assets/images/markiting/Influencer.png";
-import servD from "../../assets/images/markiting/social.png";
-import servE from "../../assets/images/markiting/email.png";
+import servA from "../../assets/images/markiting/ads.svg";
+import servB from "../../assets/images/markiting/seo-service.svg";
+import servC from "../../assets/images/markiting/Influencer.svg";
+import servD from "../../assets/images/markiting/social.svg";
+import servE from "../../assets/images/markiting/email.svg";
 
-import inful from "../../assets/images/markiting/Influ.png";
+import inful from "../../assets/images/markiting/Influ.svg";
 
-import soc from "../../assets/images/markiting/soc.png";
+import soc from "../../assets/images/markiting/soc.svg";
 
-import mail from "../../assets/images/markiting/mail.png";
+import mail from "../../assets/images/markiting/mail.svg";
 
 export default function Marketing() {
   useEffect(() => {
