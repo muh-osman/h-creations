@@ -41,7 +41,7 @@ nav {
 }
 
 @media (min-width: 991px) {
-  nav {
+  nav.navbar {
     background: rgba(255, 255, 255, 0.5) !important;
     backdrop-filter: blur(4.5px) !important;
   }

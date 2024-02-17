@@ -1,0 +1,16 @@
+.video-container {
+    height: calc(100vh - 112px);
+  
+    .img-box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 500px;
+      margin: auto;
+  
+      img {
+        width: 100%;
+      }
+    }
+  }
+  

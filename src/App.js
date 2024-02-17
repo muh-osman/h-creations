@@ -10,13 +10,23 @@ import Programing from "./pages/Programing/Programing";
 import About from "./pages/About/About"
 import Contact from "./pages/Contact/Contact";
 
+import SignIn from "./dashboard/SignIn/SignIn";
+import Auth from "./utiles/Auth";
+import ResponsiveDrawer from "./dashboard/Drawer/ResponsiveDrawer";
+import Sale from "./dashboard/Sale/Sale";
+import Video from "./dashboard/Video/Video";
+import Images from "./dashboard/Images/Images";
+
+
 
 
 export default function App() {
 
   const router = createBrowserRouter(
     createRoutesFromElements(
-      <Route path="/" element={<Layout />}>
+      <Route path="/">
+
+      <Route element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="branding" element={<Branding />} />
@@ -24,6 +34,23 @@ export default function App() {
           <Route path="marketing" element={<Marketing />} />
           <Route path="programing" element={<Programing />} />
           <Route path="contact" element={<Contact />} />
+      </Route>
+
+
+
+          <Route path="admin" element={<SignIn />} />
+
+          {/* Protected route */}
+          <Route element={<Auth />}>
+            <Route path="dashboard" element={<ResponsiveDrawer />} >
+
+              <Route path="sale" element={<Sale />} />
+              <Route path="images" element={<Images />} />
+              <Route path="video" element={<Video />} />
+
+            </Route>
+          </Route>
+
       </Route>
     )
   );
