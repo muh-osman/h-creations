@@ -2,19 +2,19 @@ import "./Sale.css";
 import { useEffect, useState } from "react";
 import api from "../../api";
 import saleImage from "../../assets/images/dashboard/sale.jpg";
+// icon
+import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
 
 export default function Sale() {
-  const [loading, setLoading] = useState(false);
-  const [message, setMessage] = useState("");
   const [sale, setSale] = useState("");
+  const [clickedButton, setClickedButton] = useState(true);
 
   async function fetchData() {
-    setLoading(true);
     try {
       const res = await api.get("api/sale/1");
       // console.log(res.data.sale.sale);
-      setLoading(false);
       setSale(res.data.sale.sale);
+      setClickedButton(false);
     } catch (err) {
       console.error(err);
     }
@@ -26,14 +26,24 @@ export default function Sale() {
 
   async function submitData(e) {
     e.preventDefault();
-    setLoading(true);
+    setClickedButton(true);
     try {
-      const res = await api.post("api/sale/1?_method=PATCH", {
+      await api.post("api/sale/1?_method=PATCH", {
         sale: sale,
       });
-      setLoading(false);
-      setMessage("All change saved.");
-      // console.log(res);
+      // Show the alert
+      document.getElementById("success-alert").style.top = "77px";
+
+      // Stop button animation
+      setClickedButton(false);
+
+      // Hide the alert after 5 seconds
+      setTimeout(function () {
+        document.getElementById("success-alert").style.top = "-5%";
+      }, 4000);
+
+      // Fetch data again
+      // fetchData();
     } catch (err) {
       console.error(err);
     }
@@ -41,45 +51,53 @@ export default function Sale() {
 
   return (
     <div className="sale-container">
-      <div className="img-box">
-        <img src={saleImage} alt="sale" />
+      <div
+        className="alert alert-success d-flex align-items-center alert_hide_me"
+        role="alert"
+        id="success-alert"
+      >
+        <CheckCircleOutlineIcon className="me-2 fs-4" />
+        <div>All changes saved</div>
       </div>
-      <form onSubmit={submitData}>
-        <div className="mb-3">
-          <label htmlFor="exampleInputEmail1" className="form-label">
-            Enter the discount value %
-          </label>
-          <input
-            value={sale}
-            onChange={(e) => setSale(e.target.value)}
-            type="number"
-            className="form-control"
-            id="exampleInputEmail1"
-            aria-describedby="emailHelp"
-            required
-          />
-          <div id="emailHelp" className="form-text">
-            {message}
-          </div>
-        </div>
 
-        <div className="text-center">
-          <button
-            type="submit"
-            className="btn btn-primary"
-            style={{ width: "53px", height: "38px" }}
-          >
-            {loading ? (
-              <div
-                className="spinner-border spinner-border-sm"
-                role="status"
-              ></div>
-            ) : (
-              "Edit"
-            )}
-          </button>
+      <div className="sale-box">
+        <div className="img-box">
+          <img src={saleImage} alt="sale" />
         </div>
-      </form>
+        <form onSubmit={submitData}>
+          <div className="mb-3">
+            <label htmlFor="exampleInputEmail1" className="form-label">
+              Enter the discount value %
+            </label>
+            <input
+              value={sale}
+              onChange={(e) => setSale(e.target.value)}
+              type="number"
+              className="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              required
+            />
+          </div>
+
+          <div className="text-center">
+            <button
+              type="submit"
+              className="btn btn-primary"
+              style={{ width: "53px", height: "38px" }}
+            >
+              {clickedButton ? (
+                <div
+                  className="spinner-border spinner-border-sm"
+                  role="status"
+                ></div>
+              ) : (
+                "Edit"
+              )}
+            </button>
+          </div>
+        </form>
+      </div>
     </div>
   );
 }

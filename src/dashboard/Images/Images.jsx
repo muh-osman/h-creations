@@ -1,19 +1,19 @@
 import "./Images.css";
 import { useEffect, useState } from "react";
 import api from "../../api";
-import imageImages from "../../assets/images/dashboard/images.jpg";
+// Icon
+import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
 
 export default function Images() {
-  const [loading, setLoading] = useState(false);
-  const [message, setMessage] = useState("");
   const [images, setImages] = useState([]);
+  const [clickedButtonId, setClickedButtonId] = useState(null);
 
   async function fetchData() {
-    setLoading(true);
+    // setLoading(true);
     try {
       const res = await api.get("api/images");
       setImages(res.data);
-      setLoading(false);
+      // setLoading(false);
     } catch (err) {
       console.error(err);
     }
@@ -25,19 +25,28 @@ export default function Images() {
 
   async function submitData(e, id) {
     e.preventDefault();
-    setLoading(true);
     const form = document.getElementById(`form-${id}`);
     const formData = new FormData(form);
 
     try {
-      const res = await api.post(`api/images/${id}?_method=PATCH`, formData, {
+      await api.post(`api/images/${id}?_method=PATCH`, formData, {
         headers: {
           "Content-Type": "multipart/form-data",
         },
       });
 
-      setLoading(false);
-      setMessage("All changes saved");
+      // Show the alert
+      document.getElementById("success-alert").style.top = "77px";
+
+      // Stop button animation
+      setClickedButtonId(null);
+
+      // Hide the alert after 5 seconds
+      setTimeout(function () {
+        document.getElementById("success-alert").style.top = "-5%";
+      }, 4000);
+
+      // Fetch data again
       fetchData();
     } catch (err) {
       console.error(err);
@@ -98,15 +107,14 @@ export default function Images() {
         />
       </div>
 
-      <div className="form-text mb-3">{message}</div>
-
       <div className="text-center">
         <button
+          onClick={() => setClickedButtonId(id)}
           type="submit"
-          className="btn btn-primary"
+          className="btn btn-primary mt-2 mb-2"
           style={{ width: "53px", height: "38px" }}
         >
-          {loading ? (
+          {clickedButtonId === id ? (
             <div
               className="spinner-border spinner-border-sm"
               role="status"
@@ -119,5 +127,18 @@ export default function Images() {
     </form>
   ));
 
-  return <div className="images-container">{imagesLoop}</div>;
+  return (
+    <div className="images-container">
+      <div
+        className="alert alert-success d-flex align-items-center alert_hide_me"
+        role="alert"
+        id="success-alert"
+      >
+        <CheckCircleOutlineIcon className="me-2 fs-4" />
+        <div>All changes saved</div>
+      </div>
+
+      {imagesLoop}
+    </div>
+  );
 }

@@ -21,16 +21,13 @@ import Button from "@mui/material/Button";
 import logo from "../../assets/images/logo-slim.png";
 
 import LoyaltyIcon from "@mui/icons-material/Loyalty";
-import OndemandVideoIcon from "@mui/icons-material/OndemandVideo";
+// import OndemandVideoIcon from "@mui/icons-material/OndemandVideo";
+import VideoLibraryIcon from "@mui/icons-material/VideoLibrary";
 import ImageIcon from "@mui/icons-material/Image";
 
-// import YouTubeIcon from "@mui/icons-material/YouTube";
-// import TwitterIcon from "@mui/icons-material/Twitter";
-
-import Arigap from "../../assets/images/markiting/email.svg";
-
-// import { useContext } from "react";
-// import { DataContext } from "../context/DataProvider";
+import XIcon from "@mui/icons-material/X";
+import FacebookRoundedIcon from "@mui/icons-material/FacebookRounded";
+import InstagramIcon from "@mui/icons-material/Instagram";
 
 const drawerWidth = 240;
 
@@ -42,19 +39,19 @@ function ResponsiveDrawer(props) {
       id: 1,
       name: "Sale",
       path: "/dashboard/sale",
-      image: <LoyaltyIcon sx={{ color: "#000000DE" }} />,
+      image: <LoyaltyIcon sx={{ color: "#757575" }} />,
     },
     {
       id: 2,
       name: "Images",
       path: "/dashboard/images",
-      image: <ImageIcon sx={{ color: "#000000DE" }} />,
+      image: <ImageIcon sx={{ color: "#757575" }} />,
     },
     {
       id: 3,
       name: "Video",
       path: "/dashboard/video",
-      image: <OndemandVideoIcon sx={{ color: "#000000DE" }} />,
+      image: <VideoLibraryIcon sx={{ color: "#757575" }} />,
     },
   ];
 
@@ -70,7 +67,10 @@ function ResponsiveDrawer(props) {
   const drawer = (
     <div>
       <Toolbar style={{ justifyContent: "center" }}>
-        <Link to="/" style={{ textDecoration: "none", color: "#fff" }}>
+        <a
+          href="https://h-creations.net/home/"
+          style={{ textDecoration: "none", color: "#fff" }}
+        >
           <Stack direction="row" spacing={2} sx={{ alignItems: "center" }}>
             <Avatar
               alt="Remy Sharp"
@@ -83,7 +83,7 @@ function ResponsiveDrawer(props) {
               }}
             />
           </Stack>
-        </Link>
+        </a>
       </Toolbar>
       <Divider />
 
@@ -91,6 +91,7 @@ function ResponsiveDrawer(props) {
         {data.map((item) => {
           return (
             <ListItem
+              dir="ltr"
               key={item.id}
               disablePadding
               button
@@ -98,11 +99,15 @@ function ResponsiveDrawer(props) {
               to={item.path}
               selected={item.path === pathname}
             >
-              <ListItemButton>
+              <ListItemButton sx={{ color: "#757575" }}>
                 <ListItemIcon>
                   <Avatar
                     alt="icon"
-                    sx={{ width: 36, height: 36, backgroundColor: "transparent" }}
+                    sx={{
+                      width: 36,
+                      height: 36,
+                      backgroundColor: "transparent",
+                    }}
                   >
                     {item.image}
                   </Avatar>
@@ -113,36 +118,53 @@ function ResponsiveDrawer(props) {
           );
         })}
 
-        {/* <Divider /> */}
+        <Divider />
 
-        {/* <Stack
+        <Stack
+          dir="ltr"
           direction="row"
           spacing={2}
-          sx={{ justifyContent: "center", gap: "10px", padding: "8px" }}
+          sx={{
+            justifyContent: "center",
+            gap: "16px",
+            padding: "8px",
+            height: "calc(100vh - 257px)",
+            alignItems: "flex-end",
+          }}
         >
-          <Link to="https://www.youtube.com/">
-            <Avatar
-              alt="YouTube"
-              sx={{ width: 24, height: 24, backgroundColor: "transparent" }}
-            >
-              <YouTubeIcon
-                sx={{ color: "#757575", "&:hover": { color: "#FF0000" } }}
-              />
-            </Avatar>
-          </Link>
-          <Link to="https://twitter.com/">
+          <a href="https://twitter.com/" style={{ margin: 0 }}>
             <Avatar
               alt="Twitter"
               sx={{ width: 24, height: 24, backgroundColor: "transparent" }}
             >
-              <TwitterIcon
+              <XIcon
                 sx={{ color: "#757575", "&:hover": { color: "#00acee" } }}
               />
             </Avatar>
-          </Link>
-        </Stack> */}
+          </a>
+          <a href="https://www.facebook.com/" style={{ margin: 0 }}>
+            <Avatar
+              alt="YouTube"
+              sx={{ width: 24, height: 24, backgroundColor: "transparent" }}
+            >
+              <FacebookRoundedIcon
+                sx={{ color: "#757575", "&:hover": { color: "#316FF6" } }}
+              />
+            </Avatar>
+          </a>
+          <a href="https://instagram.com/" style={{ margin: 0 }}>
+            <Avatar
+              alt="Instagram"
+              sx={{ width: 24, height: 24, backgroundColor: "transparent" }}
+            >
+              <InstagramIcon
+                sx={{ color: "#757575", "&:hover": { color: "#cd486b" } }}
+              />
+            </Avatar>
+          </a>
+        </Stack>
 
-        {/* <Typography
+        <Typography
           style={{
             textAlign: "center",
             justifyContent: "center",
@@ -155,7 +177,7 @@ function ResponsiveDrawer(props) {
           component="h1"
         >
           © 2024 H Creations
-        </Typography> */}
+        </Typography>
       </List>
     </div>
   );
@@ -191,7 +213,14 @@ function ResponsiveDrawer(props) {
           </IconButton>
 
           <div className="nav_link" style={{ marginLeft: "auto" }}>
-            <Button onClick={logout} variant="contained" sx={{ backgroundColor: "#b6ac9a" }}>
+            <Button
+              onClick={logout}
+              variant="contained"
+              sx={{
+                backgroundColor: "#b6ac9a",
+                "&:hover": { backgroundColor: "#837966 " },
+              }}
+            >
               Logout
             </Button>
           </div>

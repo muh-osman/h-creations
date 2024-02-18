@@ -39,4 +39,11 @@
       border-radius: 9px;
     }
   }
+
+  .alert_hide_me {
+    position: fixed;
+    top: -5%;
+    background-color: #edf4fc;
+    transition: .5s;
+  }
 }
