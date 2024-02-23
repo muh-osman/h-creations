@@ -1,8 +1,10 @@
 // React
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 // Sass
 import style from "./Brandin.module.scss";
-//
+// Icon
+import CloseIcon from "@mui/icons-material/Close";
+// images
 import logoA from "../../assets/images/branding/logo-1.png";
 import logoB from "../../assets/images/branding/logo-2.png";
 import logoC from "../../assets/images/branding/logo-3.png";
@@ -18,16 +20,6 @@ import brandC from "../../assets/images/branding/brand-3.jpg";
 import brandD from "../../assets/images/branding/brand-4.jpg";
 import brandE from "../../assets/images/branding/brand-5.jpg";
 import brandF from "../../assets/images/branding/brand-6.jpg";
-
-import iconA from "../../assets/images/branding/icon-1.png";
-import iconB from "../../assets/images/branding/icon-2.png";
-import iconC from "../../assets/images/branding/icon-3.png";
-import iconD from "../../assets/images/branding/icon-4.png";
-import iconE from "../../assets/images/branding/icon-5.webp";
-import iconF from "../../assets/images/branding/icon-6.png";
-import iconG from "../../assets/images/branding/icon-7.png";
-import iconH from "../../assets/images/branding/icon-8.png";
-import iconI from "../../assets/images/branding/icon-9.png";
 
 import rowA from "../../assets/images/branding/row-1.avif";
 import rowB from "../../assets/images/branding/row-2.avif";
@@ -62,6 +54,35 @@ export default function Branding() {
       behavior: "auto",
     });
   }, []);
+
+  const [overlayImage, setOverlayImage] = useState("");
+
+  const handleImageClick = (src) => {
+    setOverlayImage(src);
+    document
+      .getElementById("lighthouseOverlay")
+      .classList.add(`${style.overlay_show}`);
+  };
+
+  const handleCloseOverlay = (e) => {
+    if (e.target === e.currentTarget) {
+      document
+        .getElementById("lighthouseOverlay")
+        .classList.remove(`${style.overlay_show}`);
+      setTimeout(() => {
+        setOverlayImage("");
+      }, 300);
+    }
+  };
+
+  const closeBtn = () => {
+    document
+      .getElementById("lighthouseOverlay")
+      .classList.remove(`${style.overlay_show}`);
+    setTimeout(() => {
+      setOverlayImage("");
+    }, 300);
+  };
 
   return (
     <div className={style.container}>
@@ -110,46 +131,6 @@ export default function Branding() {
           className="carousel slide carousel-fade"
           data-bs-ride="carousel"
         >
-          {/* <div className="carousel-indicators">
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="0"
-              className="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="2"
-              aria-label="Slide 3"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="3"
-              aria-label="Slide 4"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="4"
-              aria-label="Slide 5"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="5"
-              aria-label="Slide 6"
-            ></button>
-          </div> */}
           <div className="carousel-inner">
             <div className="carousel-item active" data-bs-interval="2500">
               <img src={brandA} className="d-block w-100" alt="branding" />
@@ -199,132 +180,109 @@ export default function Branding() {
 
       <section className={style.rows}>
         <div>
-          <div>
+          <div onClick={() => handleImageClick(rowI)}>
             <img src={rowI} alt="branding" />
           </div>
-          <div>
+          <div onClick={() => handleImageClick(rowJ)}>
             <img src={rowJ} alt="branding" />
           </div>
-          <div>
+          <div onClick={() => handleImageClick(rowK)}>
             <img src={rowK} alt="branding" />
           </div>
-          <div>
+          <div onClick={() => handleImageClick(rowL)}>
             <img src={rowL} alt="branding" />
           </div>
         </div>
 
         <div>
-          <div>
+          <div onClick={() => handleImageClick(rowA)}>
             <img src={rowA} alt="branding" />
           </div>
-          <div>
+          <div onClick={() => handleImageClick(rowB)}>
             <img src={rowB} alt="branding" />
           </div>
-          <div>
+          <div onClick={() => handleImageClick(rowC)}>
             <img src={rowC} alt="branding" />
           </div>
-          <div>
+          <div onClick={() => handleImageClick(rowD)}>
             <img src={rowD} alt="branding" />
           </div>
         </div>
 
         <div>
-          <div>
+          <div onClick={() => handleImageClick(rowM)}>
             <img src={rowM} alt="branding" />
           </div>
-          <div>
+          <div onClick={() => handleImageClick(rowN)}>
             <img src={rowN} alt="branding" />
           </div>
-          <div>
+          <div onClick={() => handleImageClick(rowO)}>
             <img src={rowO} alt="branding" />
           </div>
-          <div>
+          <div onClick={() => handleImageClick(rowP)}>
             <img src={rowP} alt="branding" />
           </div>
         </div>
 
         <div>
-          <div>
+          <div onClick={() => handleImageClick(rowE)}>
             <img src={rowE} alt="branding" />
           </div>
-          <div>
+          <div onClick={() => handleImageClick(rowF)}>
             <img src={rowF} alt="branding" />
           </div>
-          <div>
+          <div onClick={() => handleImageClick(rowG)}>
             <img src={rowG} alt="branding" />
           </div>
-          <div>
+          <div onClick={() => handleImageClick(rowH)}>
             <img src={rowH} alt="branding" />
           </div>
         </div>
 
         <div>
-          <div>
+          <div onClick={() => handleImageClick(rowQ)}>
             <img src={rowQ} alt="branding" />
           </div>
-          <div>
+          <div onClick={() => handleImageClick(rowR)}>
             <img src={rowR} alt="branding" />
           </div>
-          <div>
+          <div onClick={() => handleImageClick(rowS)}>
             <img src={rowS} alt="branding" />
           </div>
-          <div>
+          <div onClick={() => handleImageClick(rowT)}>
             <img src={rowT} alt="branding" />
           </div>
         </div>
 
         <div>
-          <div>
+          <div onClick={() => handleImageClick(rowU)}>
             <img src={rowU} alt="branding" />
           </div>
-          <div>
+          <div onClick={() => handleImageClick(rowV)}>
             <img src={rowV} alt="branding" />
           </div>
-          <div>
+          <div onClick={() => handleImageClick(rowW)}>
             <img src={rowW} alt="branding" />
           </div>
-          <div>
+          <div onClick={() => handleImageClick(rowX)}>
             <img src={rowX} alt="branding" />
           </div>
         </div>
       </section>
 
-      <section className={style.succsess}>
-        <h1>شركاء النجاح</h1>
-
-        <hr />
-
-        <div className={style.box}>
-          <div>
-            <img src={iconA} alt="logo" />
-          </div>
-          <div>
-            <img src={iconB} alt="logo" />
-          </div>
-          <div>
-            <img src={iconG} alt="logo" />
-          </div>
-          <div>
-            <img src={iconC} alt="logo" />
-          </div>
-          <div>
-            <img src={iconD} alt="logo" />
-          </div>
-          <div>
-            <img src={iconH} alt="logo" />
-          </div>
-          <div>
-            <img src={iconE} alt="logo" />
-          </div>
-          <div>
-            <img src={iconF} alt="logo" />
-          </div>
-          <div>
-            <img src={iconI} alt="logo" />
-          </div>
+      {/* Lighthouse overlay */}
+      <div
+        className={style.overlay}
+        onClick={handleCloseOverlay}
+        id="lighthouseOverlay"
+      >
+        <button onClick={closeBtn}>
+          <CloseIcon sx={{ fontSize: "22px", fontWeight: "500" }} />
+        </button>
+        <div className={style.img_box}>
+          <img src={overlayImage} alt="lighthouse" />
         </div>
-
-      </section>
+      </div>
     </div>
   );
 }
