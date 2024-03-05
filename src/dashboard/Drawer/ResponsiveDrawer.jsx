@@ -19,6 +19,7 @@ import Avatar from "@mui/material/Avatar";
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
 import logo from "../../assets/images/logo-slim.png";
+import DesignServicesIcon from "@mui/icons-material/DesignServices";
 
 import LoyaltyIcon from "@mui/icons-material/Loyalty";
 // import OndemandVideoIcon from "@mui/icons-material/OndemandVideo";
@@ -49,6 +50,12 @@ function ResponsiveDrawer(props) {
     },
     {
       id: 3,
+      name: "Services",
+      path: "/dashboard/services",
+      image: <DesignServicesIcon sx={{ color: "#757575" }} />,
+    },
+    {
+      id: 4,
       name: "Video",
       path: "/dashboard/video",
       image: <VideoLibraryIcon sx={{ color: "#757575" }} />,
@@ -128,7 +135,7 @@ function ResponsiveDrawer(props) {
             justifyContent: "center",
             gap: "16px",
             padding: "8px",
-            height: "calc(100vh - 257px)",
+            height: "calc(100vh - 309px)",
             alignItems: "flex-end",
           }}
         >

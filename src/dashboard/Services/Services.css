@@ -1,0 +1,13 @@
+.serv_box {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.cusom_svg {
+  width: 25px;
+  height: 25px;
+  fill: #4caf50;
+}
