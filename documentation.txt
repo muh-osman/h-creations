@@ -1,0 +1,37 @@
+﻿1- الموقع ولوحة التحكم باستخدام React.js
+--------------------------------------------------
+2- صفحة الهبوط بدون اطار عمل (plain js, css, html)
+--------------------------------------------------
+3- بيانات الدخول للوحة التحكم: (لوحة التحكم فقط لصفحة الهبوط)
+admin@mail.com
+00266321@zxc
+--------------------------------------------------
+4- لوحة التحكم باستخدام: Laravel API
+في مجلد back-end
+--------------------------------------------------
+APIs:
+sale table
+// Create Sale:        -> method: -> POST =>  https://h-creations.net/back-end/public/api/sale
+// Show Sale by id:    -> method: -> GET  =>  https://h-creations.net/back-end/public/api/sale/1
+// Update Sale by id:  -> method: -> POST =>  https://h-creations.net/back-end/public/api/sale/1?_method=PATCH
+
+video table:
+// Create video:       -> method: -> POST =>  https://h-creations.net/back-end/public/api/video
+// Show video by id:   -> method: -> GET  =>  https://h-creations.net/back-end/public/api/video/1
+// Update video by id: -> method: -> POST =>  https://h-creations.net/back-end/public/api/video/1?_method=PATCH
+
+images table:
+// Create images:       -> method POST   =>  https://h-creations.net/back-end/public/api/images
+// Show all images:     -> method GET    =>  https://h-creations.net/back-end/public/api/images
+// Show image by id:    -> method GET    =>  https://h-creations.net/back-end/public/api/images/1
+// Update images by id: -> method POST   =>  https://h-creations.net/back-end/public/api/images/1?_method=PATCH
+// Delete image by id:  -> method DELETE =>  https://h-creations.net/back-end/public/api/images/1
+
+--------------------------------------------------
+الموقع: (في مجلد الجذر public_html)
+https://h-creations.net/
+لوحة التحكم: (مدمجة مع الموقع)
+https://h-creations.net/admin
+صفحة الهبوط: (في مجلد home)
+https://h-creations.net/home/
+-----------------------------------------------
